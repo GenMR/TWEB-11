@@ -1,0 +1,985 @@
+/* VARIABLES */
+
+$font-main: 'Nunito Sans', sans-serif;
+
+$primary: #159AC0;
+$secondary: #0B6F89;
+$white: #ffffff;
+$light: #f8f9fa;
+$dark: #333333;
+
+$filosofia: #005F56;
+$infantil: #1292C8;
+$danzas: #A8C800;
+$artes: #6F2A92;
+$musica: #4AC0CC;
+$salud: #F2C300;
+$ciencias: #45B0E5;
+$cultura-general: #F39A1A;
+$teatro: #E91D4D;
+$audiovisual: #233B7D;
+$letras: #27448E;
+$historia: #B8874A;
+
+$fs-xs: 0.75rem;
+$fs-sm: 0.875rem;
+$fs-base: 1.175rem;
+$fs-md: 1.125rem;
+$fs-lg: 1.25rem;
+$fs-xl: 1.5rem;
+$fs-2xl: 1.75rem;
+$fs-3xl: 2rem;
+$fs-4xl: 2.5rem;
+$fs-5xl: 3rem;
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+$space-xl: 6rem;
+
+$radius: 1rem;
+$shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+/* GLOBAL */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-main;
+    color: $dark;
+    overflow-x: hidden;
+}
+
+.section-padding {
+    padding: $space-xl 0;
+}
+
+.section-label {
+    color: $primary;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+$btn-padding-y: 0.375rem;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+/* BOTONES */
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 0.375rem;
+    padding: 0.375rem 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $light;
+        border-color: $white;
+        color: $primary !important;
+    }
+}
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
+
+.btn-primary-custom {
+    background-color: $primary;
+    border: 2px solid $primary;
+    color: $white;
+    border-radius: 0.375rem;
+    padding: 0.375rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    outline: $secondary;
+
+    &:hover {
+        background-color: $light;
+        border-color: $white;
+        color: $primary !important;
+    }
+}
+
+
+
+/* NAVBAR */
+
+.nav-ccv {
+    background-color: rgba($secondary, 0.8) !important;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    color: $white !important;
+    font-weight: 600;
+    font-size: $fs-base;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: rgba($white, 0.7) !important;
+    }
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    color: $white;
+    font-size: 1.5rem;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+/* HERO */
+.hero-section {
+    min-height: 100vh;
+    background: linear-gradient(rgba($secondary, 0.65), rgba($secondary, 1)),
+        url('../assets/imagenes/img3.jpg') center/cover no-repeat;
+    padding-top: 5rem;
+}
+
+.hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+}
+
+.hero-texto {
+    max-width: 700px;
+    font-size: $fs-lg;
+    color: white;
+}
+
+/* SECC 2 */
+.esencia-section {
+    background: $white;
+}
+
+.esencia-titulo {
+    font-size: $fs-3xl;
+    font-weight: 800;
+    color: $dark;
+}
+
+.esencia-texto {
+    font-size: $fs-base;
+    color: rgba($dark, 0.8);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pilar-icono {
+    font-size: $fs-4xl;
+    color: $primary;
+}
+
+.pilar-nombre {
+    font-weight: 800;
+    font-size: $fs-base;
+}
+
+.pilar-desc {
+    font-size: $fs-sm;
+    color: rgba($dark, 0.6);
+    line-height: 1.3;
+}
+
+.esencia-img {
+    max-width: 85%;
+}
+
+/* ESCUELAS */
+
+.escuelas-section {
+    background: $light;
+}
+
+.escuela-titulo {
+    font-size: $fs-3xl;
+    font-weight: 800;
+    color: $dark;
+}
+
+.escuela-card {
+    background: $light;
+    border-radius: $radius;
+    overflow: hidden;
+    box-shadow: $shadow;
+
+}
+
+.escuela-header {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    gap: 1rem;
+    transition: background 0.2s;
+
+    &:hover {
+        background: rgba($primary, 0.05);
+    }
+
+    h3 {
+        font-size: $fs-base;
+        font-weight: 700;
+        margin: 0;
+        flex: 1;
+    }
+
+    .fa-chevron-down {
+        color: rgba($dark, 0.4);
+        transition: transform 0.3s ease;
+        font-size: 0.9rem;
+    }
+
+    &[aria-expanded="true"] .fa-chevron-down {
+        transform: rotate(180deg);
+    }
+}
+
+.escuela-img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    i {
+        color: $white;
+        font-size: 1.2rem;
+    }
+}
+
+.escuela-body {
+    padding: 0 1.5rem 1.5rem;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 1rem;
+
+        li {
+            padding: 0.4rem 0;
+            border-bottom: 1px solid rgba($dark, 0.06);
+            font-size: 0.9rem;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+.escuela-filosofia {
+    border-left: 6px solid $filosofia;
+}
+
+.escuela-infantil {
+    border-left: 6px solid $infantil;
+}
+
+.escuela-danzas {
+    border-left: 6px solid $danzas;
+}
+
+.escuela-artes {
+    border-left: 6px solid $artes;
+}
+
+.escuela-musica {
+    border-left: 6px solid $musica;
+}
+
+.escuela-salud {
+    border-left: 6px solid $salud;
+}
+
+.escuela-ciencias {
+    border-left: 6px solid $ciencias;
+}
+
+.escuela-cultura-general {
+    border-left: 6px solid $cultura-general;
+}
+
+.escuela-teatro {
+    border-left: 6px solid $teatro;
+}
+
+.escuela-audiovisual {
+    border-left: 6px solid $audiovisual;
+}
+
+.escuela-letras {
+    border-left: 6px solid $letras;
+}
+
+.escuela-historia {
+    border-left: 6px solid $historia;
+}
+
+
+/* FILOSOFÍA */
+
+.filosofia-section {
+    background: $white;
+}
+
+.filosofia-titulo {
+    font-size: $fs-3xl;
+    font-weight: 800;
+    color: $dark;
+}
+
+.filosofia-texto {
+    font-size: $fs-base;
+    color: rgba($dark, 0.8);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filosofia-img {
+    max-width: 80%;
+}
+
+
+/* TESTIMONIOS */
+
+.testimonios-section {
+    background: $light;
+}
+
+.testimonios-titulo {
+    font-size: $fs-3xl;
+    font-weight: 800;
+    color: $dark;
+}
+
+.testimonios-subtitulo {
+    font-size: $fs-base;
+    color: rgba($dark, 0.6);
+}
+
+.testimonio-texto {
+    font-size: $fs-base;
+    font-style: italic;
+    line-height: 1.7;
+    color: rgba($dark, 0.8);
+    ;
+}
+
+.testimonio-autor {
+    font-size: $fs-base;
+    color: $dark;
+}
+
+.testimonio-rol {
+    font-size: $fs-sm;
+}
+
+.testimonio-card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* CAROUSEL */
+
+#testimoniosCarousel {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: auto;
+        opacity: 1;
+
+        i {
+            font-size: 1.8rem;
+            color: $primary;
+            background: $white;
+            padding: 0.5rem 0.8rem;
+            border-radius: 50%;
+            box-shadow: $shadow;
+            transition: all 0.3s ease;
+        }
+
+        &:hover i {
+            background: $primary;
+            color: $white;
+        }
+    }
+
+    .carousel-control-prev {
+        left: 1rem;
+    }
+
+    .carousel-control-next {
+        right: 1rem;
+    }
+}
+
+/* GALERÍA */
+
+.galeria-section {
+    background: $white;
+}
+
+.galeria-titulo {
+    font-size: $fs-3xl;
+    font-weight: 800;
+    color: $dark;
+}
+
+.galeria-subtitulo {
+    font-size: $fs-base;
+    color: rgba($dark, 0.6);
+}
+
+.galeria-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+/* BAGUETTEBOX */
+
+.baguetteBox-button {
+    background-color: rgba($primary, 0.9) !important;
+    color: $white !important;
+    transition: all 0.3s ease !important;
+
+    &:hover {
+        background-color: $primary !important;
+        color: $white !important;
+        transform: scale(1.05) !important;
+    }
+}
+
+.baguetteBox-button#baguetteBox-close {
+    background-color: rgba($primary, 0.9) !important;
+    color: $white !important;
+
+    &:hover {
+        background-color: $primary !important;
+        color: $white !important;
+    }
+}
+
+/* CONTACTO */
+
+.contacto-section {
+    background: $light;
+}
+
+.contacto-titulo {
+    font-size: $fs-3xl;
+    font-weight: 800;
+    color: $dark;
+}
+
+.contacto-subtitulo {
+    font-size: $fs-base;
+    color: rgba($dark, 0.6);
+}
+
+.contacto-info {
+    background: $white;
+    border-left: 6px solid $primary;
+}
+
+h4 {
+    font-size: $fs-xl;
+    color: $dark;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: $fs-base;
+    color: rgba($dark, 0.7);
+    margin-bottom: 0.75rem;
+}
+
+
+.contacto-form {
+    background: $white;
+
+    .form-label {
+        font-size: $fs-sm;
+        color: $dark;
+        margin-bottom: 0.3rem;
+    }
+
+    .form-control {
+        border: 1px solid rgba($dark, 0.1);
+        border-radius: 0.5rem;
+        padding: 0.7rem 1rem;
+        font-size: $fs-base;
+
+        &:focus {
+            border-color: $primary !important;
+            box-shadow: 0 0 0 0.2rem rgba($primary, 0.2) !important;
+            outline: none !important;
+        }
+
+        &::placeholder {
+            color: rgba($dark, 0.4);
+        }
+    }
+}
+
+.contact-card {
+
+    padding: 2rem;
+    background: $light;
+    border-radius: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: $primary;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: $secondary;
+    padding: 2.5rem 0;
+    text-align: center;
+
+    .footer-copy {
+        font-size: $fs-sm;
+        color: rgba($white, 0.7);
+        margin: 0;
+    }
+}
+
+/* SCROLL TOP */
+
+.scroll-top {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 999;
+}
+
+
+/* RESPONSIVE */
+
+/* MÓVILES */
+
+@media (max-width: 576px) {
+
+    .navbar-brand img {
+        height: 28px;
+    }
+
+    .navbar-collapse {
+        background-color: $secondary;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        gap: 0.2rem !important;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.1rem 0;
+        width: 100%;
+    }
+
+    .nav-link {
+        font-size: 1rem !important;
+        padding: 0.5rem 0 !important;
+        border-bottom: 1px solid rgba($white, 0.1);
+        display: block;
+        width: 100%;
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-nav .btn-outline-custom {
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0 0 !important;
+        padding: 0.6rem 1rem;
+        display: block;
+        border: 2px solid $white;
+        background-color: transparent;
+        color: $white;
+        font-weight: 600;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $white;
+            color: $primary !important;
+        }
+    }
+
+    .navbar .btn-outline-custom.ms-3 {
+        display: none;
+    }
+
+    .navbar-collapse .btn-outline-custom {
+        display: block !important;
+    }
+
+    .hero-section {
+        padding-top: 6rem;
+        min-height: 90vh;
+    }
+
+    .hero-logo {
+        max-width: 280px;
+    }
+
+    .hero-texto {
+        font-size: 1rem;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-section .d-flex {
+        gap: 1rem !important;
+    }
+
+    .btn-outline-custom {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 1rem;
+    }
+
+    .esencia-section .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .esencia-titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .esencia-texto {
+        font-size: 0.95rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .esencia-img {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .pilar {
+        margin-bottom: 1rem;
+    }
+
+    .pilar-icono {
+        font-size: 2rem;
+    }
+
+    .pilar-nombre {
+        font-size: 0.8rem;
+    }
+
+    .pilar-desc {
+        font-size: 0.65rem;
+        display: block;
+    }
+
+    .escuela-titulo {
+        font-size: 1.8rem;
+    }
+
+    .escuela-card {
+        margin-bottom: 0.5rem;
+    }
+
+    .escuela-header {
+        padding: 1rem;
+    }
+
+    .escuela-header h3 {
+        font-size: 0.9rem;
+    }
+
+    .escuela-img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .escuela-img i {
+        font-size: 1rem;
+    }
+
+    .escuela-body {
+        padding: 0 1rem 1rem;
+    }
+
+    .escuela-body ul li {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+    }
+
+    .escuela-body .btn-outline-primary {
+        font-size: 0.8rem;
+        padding: 0.25rem 0.8rem;
+        width: 100%;
+    }
+
+    .filosofia-titulo {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .filosofia-texto {
+        font-size: 0.95rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .filosofia-img {
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+
+    .testimonios-titulo {
+        font-size: 1.8rem;
+    }
+
+    .testimonio-texto {
+        font-size: 0.95rem;
+    }
+
+    .testimonio-card {
+        min-height: 300px;
+        padding: 1rem;
+    }
+
+    #testimoniosCarousel {
+        .carousel-control-prev {
+            left: -0.5rem;
+        }
+
+        .carousel-control-next {
+            right: -0.5rem;
+        }
+
+        .carousel-control-prev i,
+        .carousel-control-next i {
+            font-size: 1.2rem;
+            padding: 0.3rem 0.5rem;
+        }
+    }
+
+    .galeria-titulo {
+        font-size: 1.8rem;
+    }
+
+    .galeria-img {
+        height: 150px;
+    }
+
+    .contacto-section .row {
+        flex-direction: column-reverse !important;
+        gap: 2rem !important;
+    }
+
+    .contact-card {
+        padding: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-card h4 {
+        font-size: 1.2rem;
+    }
+
+    .contacto-section h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .contacto-section p {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .contacto-form .form-control {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .btn-primary-custom {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 1rem;
+    }
+
+    .social-icons {
+        gap: 0.8rem;
+        justify-content: center;
+    }
+
+    .social-icons a {
+        font-size: 1.3rem;
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .footer {
+        padding: 2rem 0;
+    }
+
+    .footer img {
+        height: 45px;
+    }
+
+    .footer .footer-copy {
+        font-size: 0.7rem;
+        padding: 0 1rem;
+    }
+
+    .scroll-top {
+        width: 40px;
+        height: 40px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* TABLETS */
+
+@media (min-width: 577px) and (max-width: 991px) {
+
+    .navbar-brand img {
+        height: 32px;
+    }
+
+    .esencia-section .row {
+        flex-direction: column-reverse !important;
+    }
+
+    .esencia-img {
+        max-width: 80%;
+        margin: 0 auto 2rem;
+        display: block;
+    }
+
+    .filosofia-img {
+        max-width: 80%;
+        margin: 0 auto 2rem;
+        display: block;
+    }
+
+    .contacto-section .row {
+        flex-direction: column-reverse !important;
+        gap: 2rem !important;
+    }
+
+    .contact-card {
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-primary-custom {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-logo {
+        max-width: 400px;
+    }
+}
+
+
+/* DESKTOP PEQ */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .hero-logo {
+        max-width: 420px;
+    }
+
+    .esencia-img {
+        max-width: 90%;
+    }
+
+    .filosofia-img {
+        max-width: 90%;
+    }
+
+    .galeria-img {
+        height: 180px;
+    }
+}

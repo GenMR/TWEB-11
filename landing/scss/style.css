@@ -1,0 +1,815 @@
+@charset "UTF-8";
+/* VARIABLES */
+/* GLOBAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: #333333;
+  overflow-x: hidden;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.section-label {
+  color: #159AC0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* BOTONES */
+.btn-outline-custom {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline-custom:hover {
+  background-color: #f8f9fa;
+  border-color: #ffffff;
+  color: #159AC0 !important;
+}
+
+.btn-outline-primary {
+  color: #159AC0;
+  border-color: #159AC0;
+}
+.btn-outline-primary:hover {
+  background: #159AC0;
+  color: #ffffff;
+}
+
+.btn-primary-custom {
+  background-color: #159AC0;
+  border: 2px solid #159AC0;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  outline: #0B6F89;
+}
+.btn-primary-custom:hover {
+  background-color: #f8f9fa;
+  border-color: #ffffff;
+  color: #159AC0 !important;
+}
+
+/* NAVBAR */
+.nav-ccv {
+  background-color: rgba(11, 111, 137, 0.8) !important;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 1.175rem;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.navbar-brand img {
+  height: 35px;
+  width: auto;
+}
+
+.navbar-toggler {
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* HERO */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(rgba(11, 111, 137, 0.65), #0b6f89), url("../assets/imagenes/img3.jpg") center/cover no-repeat;
+  padding-top: 5rem;
+}
+
+.hero-logo {
+  max-width: 500px;
+  filter: brightness(0) invert(1);
+}
+
+.hero-texto {
+  max-width: 700px;
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* SECC 2 */
+.esencia-section {
+  background: #ffffff;
+}
+
+.esencia-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.esencia-texto {
+  font-size: 1.175rem;
+  color: rgba(51, 51, 51, 0.8);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pilar-icono {
+  font-size: 2.5rem;
+  color: #159AC0;
+}
+
+.pilar-nombre {
+  font-weight: 800;
+  font-size: 1.175rem;
+}
+
+.pilar-desc {
+  font-size: 0.875rem;
+  color: rgba(51, 51, 51, 0.6);
+  line-height: 1.3;
+}
+
+.esencia-img {
+  max-width: 85%;
+}
+
+/* ESCUELAS */
+.escuelas-section {
+  background: #f8f9fa;
+}
+
+.escuela-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.escuela-card {
+  background: #f8f9fa;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.escuela-header {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  gap: 1rem;
+  transition: background 0.2s;
+}
+.escuela-header:hover {
+  background: rgba(21, 154, 192, 0.05);
+}
+.escuela-header h3 {
+  font-size: 1.175rem;
+  font-weight: 700;
+  margin: 0;
+  flex: 1;
+}
+.escuela-header .fa-chevron-down {
+  color: rgba(51, 51, 51, 0.4);
+  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+}
+.escuela-header[aria-expanded=true] .fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.escuela-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.escuela-img i {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.escuela-body {
+  padding: 0 1.5rem 1.5rem;
+}
+.escuela-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+.escuela-body ul li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.06);
+  font-size: 0.9rem;
+}
+.escuela-body ul li:last-child {
+  border-bottom: none;
+}
+
+.escuela-filosofia {
+  border-left: 6px solid #005F56;
+}
+
+.escuela-infantil {
+  border-left: 6px solid #1292C8;
+}
+
+.escuela-danzas {
+  border-left: 6px solid #A8C800;
+}
+
+.escuela-artes {
+  border-left: 6px solid #6F2A92;
+}
+
+.escuela-musica {
+  border-left: 6px solid #4AC0CC;
+}
+
+.escuela-salud {
+  border-left: 6px solid #F2C300;
+}
+
+.escuela-ciencias {
+  border-left: 6px solid #45B0E5;
+}
+
+.escuela-cultura-general {
+  border-left: 6px solid #F39A1A;
+}
+
+.escuela-teatro {
+  border-left: 6px solid #E91D4D;
+}
+
+.escuela-audiovisual {
+  border-left: 6px solid #233B7D;
+}
+
+.escuela-letras {
+  border-left: 6px solid #27448E;
+}
+
+.escuela-historia {
+  border-left: 6px solid #B8874A;
+}
+
+/* FILOSOFÍA */
+.filosofia-section {
+  background: #ffffff;
+}
+
+.filosofia-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.filosofia-texto {
+  font-size: 1.175rem;
+  color: rgba(51, 51, 51, 0.8);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filosofia-img {
+  max-width: 80%;
+}
+
+/* TESTIMONIOS */
+.testimonios-section {
+  background: #f8f9fa;
+}
+
+.testimonios-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.testimonios-subtitulo {
+  font-size: 1.175rem;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.testimonio-texto {
+  font-size: 1.175rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.testimonio-autor {
+  font-size: 1.175rem;
+  color: #333333;
+}
+
+.testimonio-rol {
+  font-size: 0.875rem;
+}
+
+.testimonio-card {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* CAROUSEL */
+#testimoniosCarousel .carousel-control-prev,
+#testimoniosCarousel .carousel-control-next {
+  width: auto;
+  opacity: 1;
+}
+#testimoniosCarousel .carousel-control-prev i,
+#testimoniosCarousel .carousel-control-next i {
+  font-size: 1.8rem;
+  color: #159AC0;
+  background: #ffffff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+#testimoniosCarousel .carousel-control-prev:hover i,
+#testimoniosCarousel .carousel-control-next:hover i {
+  background: #159AC0;
+  color: #ffffff;
+}
+#testimoniosCarousel .carousel-control-prev {
+  left: 1rem;
+}
+#testimoniosCarousel .carousel-control-next {
+  right: 1rem;
+}
+
+/* GALERÍA */
+.galeria-section {
+  background: #ffffff;
+}
+
+.galeria-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.galeria-subtitulo {
+  font-size: 1.175rem;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.galeria-img {
+  width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.galeria-img:hover {
+  transform: scale(1.03);
+}
+
+/* BAGUETTEBOX */
+.baguetteBox-button {
+  background-color: rgba(21, 154, 192, 0.9) !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+.baguetteBox-button:hover {
+  background-color: #159AC0 !important;
+  color: #ffffff !important;
+  transform: scale(1.05) !important;
+}
+
+.baguetteBox-button#baguetteBox-close {
+  background-color: rgba(21, 154, 192, 0.9) !important;
+  color: #ffffff !important;
+}
+.baguetteBox-button#baguetteBox-close:hover {
+  background-color: #159AC0 !important;
+  color: #ffffff !important;
+}
+
+/* CONTACTO */
+.contacto-section {
+  background: #f8f9fa;
+}
+
+.contacto-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #333333;
+}
+
+.contacto-subtitulo {
+  font-size: 1.175rem;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.contacto-info {
+  background: #ffffff;
+  border-left: 6px solid #159AC0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.175rem;
+  color: rgba(51, 51, 51, 0.7);
+  margin-bottom: 0.75rem;
+}
+
+.contacto-form {
+  background: #ffffff;
+}
+.contacto-form .form-label {
+  font-size: 0.875rem;
+  color: #333333;
+  margin-bottom: 0.3rem;
+}
+.contacto-form .form-control {
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.175rem;
+}
+.contacto-form .form-control:focus {
+  border-color: #159AC0 !important;
+  box-shadow: 0 0 0 0.2rem rgba(21, 154, 192, 0.2) !important;
+  outline: none !important;
+}
+.contacto-form .form-control::-moz-placeholder {
+  color: rgba(51, 51, 51, 0.4);
+}
+.contacto-form .form-control::placeholder {
+  color: rgba(51, 51, 51, 0.4);
+}
+
+.contact-card {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #159AC0;
+  font-size: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0B6F89;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+.footer .footer-copy {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* SCROLL TOP */
+.scroll-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #159AC0;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 999;
+}
+
+/* RESPONSIVE */
+/* MÓVILES */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 28px;
+  }
+  .navbar-collapse {
+    background-color: #0B6F89;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.8rem;
+  }
+  .navbar-nav {
+    text-align: center;
+    gap: 0.2rem !important;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    margin: 0.1rem 0;
+    width: 100%;
+  }
+  .nav-link {
+    font-size: 1rem !important;
+    padding: 0.5rem 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    width: 100%;
+  }
+  .nav-link:last-child {
+    border-bottom: none;
+  }
+  .navbar-nav .btn-outline-custom {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0 0 !important;
+    padding: 0.6rem 1rem;
+    display: block;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .navbar-nav .btn-outline-custom:hover {
+    background-color: #ffffff;
+    color: #159AC0 !important;
+  }
+  .navbar .btn-outline-custom.ms-3 {
+    display: none;
+  }
+  .navbar-collapse .btn-outline-custom {
+    display: block !important;
+  }
+  .hero-section {
+    padding-top: 6rem;
+    min-height: 90vh;
+  }
+  .hero-logo {
+    max-width: 280px;
+  }
+  .hero-texto {
+    font-size: 1rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-section .d-flex {
+    gap: 1rem !important;
+  }
+  .btn-outline-custom {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+  }
+  .esencia-section .row {
+    flex-direction: column-reverse !important;
+  }
+  .esencia-titulo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .esencia-texto {
+    font-size: 0.95rem;
+    text-align: center;
+    max-width: 100%;
+  }
+  .esencia-img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .pilar {
+    margin-bottom: 1rem;
+  }
+  .pilar-icono {
+    font-size: 2rem;
+  }
+  .pilar-nombre {
+    font-size: 0.8rem;
+  }
+  .pilar-desc {
+    font-size: 0.65rem;
+    display: block;
+  }
+  .escuela-titulo {
+    font-size: 1.8rem;
+  }
+  .escuela-card {
+    margin-bottom: 0.5rem;
+  }
+  .escuela-header {
+    padding: 1rem;
+  }
+  .escuela-header h3 {
+    font-size: 0.9rem;
+  }
+  .escuela-img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .escuela-img i {
+    font-size: 1rem;
+  }
+  .escuela-body {
+    padding: 0 1rem 1rem;
+  }
+  .escuela-body ul li {
+    font-size: 0.8rem;
+    padding: 0.3rem 0;
+  }
+  .escuela-body .btn-outline-primary {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.8rem;
+    width: 100%;
+  }
+  .filosofia-titulo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .filosofia-texto {
+    font-size: 0.95rem;
+    text-align: center;
+    max-width: 100%;
+  }
+  .filosofia-img {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .testimonios-titulo {
+    font-size: 1.8rem;
+  }
+  .testimonio-texto {
+    font-size: 0.95rem;
+  }
+  .testimonio-card {
+    min-height: 300px;
+    padding: 1rem;
+  }
+  #testimoniosCarousel .carousel-control-prev {
+    left: -0.5rem;
+  }
+  #testimoniosCarousel .carousel-control-next {
+    right: -0.5rem;
+  }
+  #testimoniosCarousel .carousel-control-prev i,
+  #testimoniosCarousel .carousel-control-next i {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .galeria-titulo {
+    font-size: 1.8rem;
+  }
+  .galeria-img {
+    height: 150px;
+  }
+  .contacto-section .row {
+    flex-direction: column-reverse !important;
+    gap: 2rem !important;
+  }
+  .contact-card {
+    padding: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .contact-card h4 {
+    font-size: 1.2rem;
+  }
+  .contacto-section h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .contacto-section p {
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .contacto-form .form-control {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+  .btn-primary-custom {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+  }
+  .social-icons {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+  .social-icons a {
+    font-size: 1.3rem;
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .footer {
+    padding: 2rem 0;
+  }
+  .footer img {
+    height: 45px;
+  }
+  .footer .footer-copy {
+    font-size: 0.7rem;
+    padding: 0 1rem;
+  }
+  .scroll-top {
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.9rem;
+  }
+}
+/* TABLETS */
+@media (min-width: 577px) and (max-width: 991px) {
+  .navbar-brand img {
+    height: 32px;
+  }
+  .esencia-section .row {
+    flex-direction: column-reverse !important;
+  }
+  .esencia-img {
+    max-width: 80%;
+    margin: 0 auto 2rem;
+    display: block;
+  }
+  .filosofia-img {
+    max-width: 80%;
+    margin: 0 auto 2rem;
+    display: block;
+  }
+  .contacto-section .row {
+    flex-direction: column-reverse !important;
+    gap: 2rem !important;
+  }
+  .contact-card {
+    margin-bottom: 0.5rem;
+  }
+  .btn-primary-custom {
+    width: 100%;
+    text-align: center;
+  }
+  .hero-logo {
+    max-width: 400px;
+  }
+}
+/* DESKTOP PEQ */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hero-logo {
+    max-width: 420px;
+  }
+  .esencia-img {
+    max-width: 90%;
+  }
+  .filosofia-img {
+    max-width: 90%;
+  }
+  .galeria-img {
+    height: 180px;
+  }
+}/*# sourceMappingURL=style.css.map */
