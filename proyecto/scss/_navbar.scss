@@ -1,0 +1,72 @@
+
+/* NAVBAR */
+
+.nav-ccv {
+    background-color: $secondary;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.nav-link {
+    color: $white !important;
+    font-weight: 600;
+    font-size: $fs-md;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: $white !important;
+        transform: scale(1.05);
+    }
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    color: $white;
+    font-size: 1.5rem;
+
+    i {
+        color: $white;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+
+/* DROPDOWN NAVBAR */
+
+.dropdown-menu{
+    background: $secondary;
+    border: none;
+    border-radius: $radius;
+    padding: .5rem 0;
+    overflow: hidden;
+    box-shadow: $shadow;
+}
+
+.dropdown-menu li{
+    margin: 0 1rem;
+}
+
+.dropdown-menu li:not(:last-child){
+    border-bottom: 2px solid rgba($white, .20);
+}
+
+.dropdown-item{
+    padding: .40rem 1.25rem;
+    font-size: $fs-md;
+    color: rgba($white, .9);
+    transition: all .25s ease;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus{
+    background: rgba($primary, .18);
+    color: $white;
+    padding-left: 1.5rem;
+}

@@ -1,0 +1,964 @@
+// VARIABLES
+
+$font-main: 'Nunito Sans', sans-serif;
+
+$primary: #159AC0;
+$secondary: #0B6F89;
+$white: #ffffff;
+$light: #f8f9fa;
+$dark: #333333;
+
+$filosofia: #005F56;
+$infantil: #1292C8;
+$danzas: #A8C800;
+$artes: #6F2A92;
+$musica: #4AC0CC;
+$salud: #e6b800;
+$ciencias: #45B0E5;
+$cultura-general: #F39A1A;
+$teatro: #E91D4D;
+$audiovisual: #233B7D;
+$letras: #27448E;
+$historia: #B8874A;
+
+$fs-xs: 0.75rem;
+$fs-sm: 0.875rem;
+$fs-base: 1.175rem;
+$fs-md: 1.125rem;
+$fs-lg: 1.35rem;
+$fs-xl: 1.5rem;
+$fs-2xl: 1.75rem;
+$fs-3xl: 2rem;
+$fs-4xl: 2.5rem;
+$fs-5xl: 3rem;
+
+
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 2rem;
+$space-lg: 4rem;
+$space-xl: 6rem;
+
+$radius: 1rem;
+$shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+// GLOBAL
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-main;
+    font-size: $fs-md;
+    color: $dark;
+    overflow-x: hidden;
+    background-color: $light;
+}
+
+
+// BOTONES
+
+.btn-outline-custom {
+    background-color: transparent;
+    border: 2px solid $white;
+    color: $white;
+    border-radius: 0.375rem;
+    padding: 0.375rem 1rem;
+    font-size: $fs-md;
+    font-weight: 600;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: $light;
+        border-color: $white;
+        color: $primary !important;
+    }
+}
+
+
+.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+
+    &:hover {
+        background: $primary;
+        color: $white;
+    }
+}
+
+
+.btn-primary-custom {
+    font-size: $fs-md;
+    background-color: $secondary;
+    border: 2px solid $secondary;
+    color: $white;
+    border-radius: 0.375rem;
+    padding: 0.375rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    outline: $secondary;
+
+    &:hover {
+        background-color: $light;
+        border-color: $secondary;
+        color: $secondary !important;
+    }
+}
+
+
+// HERO
+
+
+.hero-section {
+    position: relative;
+    isolation: isolate;
+
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(90deg,
+            rgba($primary, 0.05) 0%,
+            rgba($primary, 0.08) 42%,
+            rgba($secondary, 0.18) 100%),
+        url("../img/hero.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+
+    // Panel diagonal
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        inset: 0 0 0 auto;
+
+        width: 54%;
+        height: 100%;
+
+        background:
+            linear-gradient(135deg,
+                rgba(darken($secondary, 18%), 0.82),
+                rgba($secondary, 0.55));
+
+        clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+
+        z-index: 0;
+        pointer-events: none;
+
+        animation: slideInRight 1.2s ease-out both;
+    }
+
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+// CONTENIDO HERO
+
+.hero-content {
+    position: relative;
+    right: 4rem;
+
+    max-width: 38rem;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 2;
+}
+
+
+//LOGO
+
+
+.hero-logo {
+    position: relative;
+    left: 8rem;
+
+    width: 100%;
+    max-width: 15rem;
+
+    filter: brightness(0) invert(1);
+}
+
+
+// TÍTULO
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.05;
+
+    span {
+        display: block;
+    }
+}
+
+
+.hero-title-inicio {
+    color: $white;
+}
+
+
+.hero-title-acento {
+    position: relative;
+    left: 6rem;
+
+    margin: 0.5rem 0;
+
+    color: lighten($secondary, 28%);
+
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+
+.hero-title-final {
+    position: relative;
+    left: 9rem;
+
+    color: $white;
+}
+
+
+// ENCABEZADO
+
+
+.catalogo-titulo {
+    font-size: $fs-5xl;
+    color: $secondary;
+    font-weight: 700;
+}
+
+.catalogo-parrafo {
+    font-size: $fs-lg;
+}
+
+// CARD
+
+.escuela-card {
+    overflow: visible;
+
+    .row {
+        align-items: stretch;
+    }
+}
+
+.escuela-visual {
+    position: relative;
+    min-height: 19rem;
+}
+
+.escuela-img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+// LABEL
+
+.escuela-label {
+    position: absolute;
+
+    top: 1.5rem;
+    left: -2rem;
+
+    z-index: 2;
+
+    min-width: 10rem;
+    padding: 0.4rem 1.5rem;
+
+    color: $white;
+    font-size: $fs-xl;
+
+    font-weight: 600;
+    text-align: center;
+
+    clip-path: inset(0 round 0 1.25rem 0 1.25rem);
+
+}
+
+
+.escuela-invertida {
+
+    .escuela-label {
+        left: auto;
+        right: -2rem;
+        clip-path: inset(0 round 1.25rem 0 1.25rem 0);
+    }
+}
+
+
+
+// TABLA
+
+.escuela-info {
+    display: flex;
+}
+
+.escuela-tabla {
+    width: 100%;
+
+    table-layout: fixed;
+    border-collapse: separate;
+
+    color: $white;
+
+
+    thead {
+        background-color: darken;
+    }
+
+    th,
+    td {
+        padding: 0.3rem 0.4rem;
+
+        vertical-align: middle;
+        line-height: 1.3;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+
+    thead th {
+        font-weight: 600;
+        text-align: center;
+    }
+
+
+    tbody th {
+        width: 25%;
+
+        font-weight: 700;
+        text-align: left;
+        padding-left: 1.6rem;
+    }
+
+
+    td {
+        text-align: center;
+    }
+
+
+    th:nth-child(1),
+    td:nth-child(1) {
+        width: 30%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 31%;
+        line-height: 1.7;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3) {
+        width: 17%;
+    }
+
+    th:nth-child(4),
+    td:nth-child(4) {
+        width: 22%;
+    }
+
+
+    tbody tr:last-child {
+
+        th,
+        td {
+            border-bottom: none;
+        }
+
+    }
+
+}
+
+
+// Card normal
+
+.escuela-card-corta {
+
+    .row {
+        align-items: stretch;
+    }
+
+    .escuela-visual {
+        position: relative;
+    }
+
+    .escuela-img {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+}
+
+.escuela-card:not(.escuela-invertida) {
+
+    .escuela-img {
+        border-radius: 1rem 0 0 0;
+    }
+}
+
+// Card invertida
+
+.escuela-invertida {
+
+    .escuela-img {
+        border-radius: 0 1rem 0 0;
+    }
+}
+
+
+
+// COLORES DE ESCUELAS
+
+.escuela-artes {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $artes;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($artes, 12%);
+    }
+
+}
+
+
+.escuela-danzas {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $danzas;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($danzas, 12%);
+    }
+
+}
+
+.escuela-musica {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $musica;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($musica, 12%);
+    }
+
+}
+
+
+.escuela-salud {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $salud;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($salud, 12%);
+    }
+
+}
+
+.escuela-infantil {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $infantil;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($infantil, 15%);
+    }
+}
+
+
+.escuela-cultura {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $cultura-general;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($cultura-general, 15%);
+    }
+}
+
+.escuela-ciencias {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $ciencias;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($ciencias, 15%);
+    }
+}
+
+
+.escuela-audiovisual {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $audiovisual;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($audiovisual, 15%);
+    }
+}
+
+.escuela-historia {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $historia;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($historia, 15%);
+    }
+}
+
+.escuela-filosofia {
+
+    .escuela-label,
+    .escuela-tabla tbody {
+        background-color: $filosofia;
+    }
+
+    .escuela-tabla thead {
+        background-color: darken($filosofia, 15%);
+    }
+}
+
+.footer {
+    background-color: $primary;
+    color: $white;
+
+}
+
+
+.footer-logo {
+    width: 15rem;
+    filter: brightness(0) invert(1);
+}
+
+
+
+.footer-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.75rem;
+    height: 2.75rem;
+
+    border: 1px solid rgba($white, 0.6);
+    border-radius: 50%;
+
+    color: $white;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+
+    &:hover {
+        background-color: $white;
+        color: $primary;
+        transform: translateY(-0.25rem);
+    }
+}
+
+
+.footer-copy {
+    font-size: $fs-sm;
+    opacity: 0.75;
+}
+
+
+// SCROLL TOP
+
+.scroll-top {
+
+    position: fixed;
+    bottom: 3rem;
+    right: 1.5rem;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    z-index: 999;
+}
+
+
+
+// RESPONSIVE
+
+
+// TABLET Y MÓVIL
+
+@media (max-width: 991.98px) {
+
+
+    // HERO
+
+    .hero-section {
+        min-height: 100vh;
+
+        background-position: 35% center;
+
+
+        &::after {
+            width: 100%;
+
+            background:
+                linear-gradient(rgba(darken($secondary, 18%), 0.45),
+                    rgba($secondary, 0.65));
+
+            clip-path: none;
+        }
+
+
+        .col-lg-6:first-child {
+            display: none;
+        }
+    }
+
+
+    .hero-content {
+        right: 0;
+
+        max-width: 100%;
+
+        padding: 2rem 1rem;
+    }
+
+
+    .hero-logo {
+        left: 0;
+
+        max-width: 14rem;
+    }
+
+
+    .hero-title {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+
+    .hero-title-acento {
+        left: 0;
+
+        font-size: 2.5rem;
+    }
+
+
+    .hero-title-final {
+        left: 0;
+    }
+
+
+
+
+    // CATÁLOGO
+
+    .catalogo-parrafo {
+        font-size: $fs-md;
+    }
+
+
+
+    // IMAGEN DE CARDS
+
+
+    .escuela-visual {
+        min-height: 22rem;
+    }
+
+
+    .escuela-img {
+        border-radius: 1rem 1rem 0 0;
+    }
+
+
+    .escuela-card-corta {
+
+        .escuela-img {
+            position: relative;
+            inset: auto;
+
+            height: 22rem;
+        }
+    }
+
+
+
+    // LABELS
+
+
+    .escuela-label,
+    .escuela-invertida .escuela-label {
+        top: 1.5rem;
+        left: 0;
+        right: auto;
+
+        clip-path: inset(0 round 0 1.25rem 0 1.25rem);
+    }
+
+
+
+    // TABLAS
+
+    .escuela-info {
+        width: 100%;
+    }
+
+
+    .escuela-tabla {
+        font-size: $fs-sm;
+
+
+        th,
+        td {
+            padding: 0.6rem 0.4rem;
+        }
+
+
+        tbody th {
+            padding-left: 1rem;
+        }
+    }
+
+
+
+    // FOOTER
+
+    .footer-logo {
+        width: 13rem;
+    }
+
+}
+
+
+
+// MÓVIL
+
+@media (max-width: 575.98px) {
+
+
+    // HERO
+
+    .hero-section {
+        background-position: 32% center;
+    }
+
+
+    .hero-content {
+        right: 0;
+
+        width: 100%;
+        max-width: 100%;
+
+        padding: 1.5rem 0.75rem;
+    }
+
+
+    .hero-logo {
+        left: 0;
+
+        max-width: 10rem;
+    }
+
+
+    .hero-title {
+        font-size: 2.2rem;
+        line-height: 1.1;
+    }
+
+
+    .hero-title-acento {
+        left: 0;
+
+        font-size: 1.8rem;
+    }
+
+
+    .hero-title-final {
+        left: 0;
+    }
+
+
+    .btn-outline-custom {
+        left: 0;
+    }
+
+
+
+    // CATÁLOGO
+
+    .catalogo-titulo {
+        font-size: $fs-3xl;
+    }
+
+
+    .catalogo-parrafo {
+        font-size: $fs-base;
+    }
+
+
+
+    // IMAGEN DE CARDS
+
+    .escuela-visual {
+        min-height: 14rem;
+    }
+
+
+    .escuela-card-corta {
+
+        .escuela-img {
+            height: 14rem;
+        }
+    }
+
+
+
+    // LABELS
+
+    .escuela-label,
+    .escuela-invertida .escuela-label {
+        top: 1rem;
+        left: 0;
+        right: auto;
+
+        min-width: 8rem;
+
+        padding: 0.5rem 1rem;
+
+        font-size: $fs-base;
+    }
+
+
+
+    // TABLAS → FICHAS VERTICALES
+
+    .escuela-info {
+        display: block;
+
+        overflow: visible;
+    }
+
+
+    .escuela-tabla {
+        display: block;
+
+        width: 100%;
+        min-width: 0;
+
+        font-size: $fs-sm;
+
+
+        thead {
+            display: none;
+        }
+
+
+        tbody {
+            display: block;
+        }
+
+
+        tr {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            padding: 1rem;
+
+            border-bottom:
+                1px solid rgba($white, 0.35);
+        }
+
+
+        th,
+        td {
+            display: block;
+
+            width: 100% !important;
+
+            padding: 0.25rem 0;
+
+            text-align: left;
+        }
+
+
+        tbody th {
+            padding-left: 0;
+            padding-bottom: 0.5rem;
+
+            font-size: $fs-md;
+        }
+
+
+        td {
+            font-size: $fs-sm;
+        }
+
+
+        tbody tr:last-child {
+            border-bottom: none;
+        }
+    }
+
+
+
+    // FOOTER
+
+    .footer {
+        text-align: center;
+    }
+
+
+    .footer-logo {
+        width: 11rem;
+    }
+
+}

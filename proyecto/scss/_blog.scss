@@ -1,0 +1,180 @@
+
+.blog-header {
+    background: rgba($primary, 0.08);
+    padding-top: 5rem;
+}
+
+.blog-hero {
+    background: rgba($primary, 0.08)
+}
+
+.blog-tag {
+    display: inline-block;
+    font-size: $fs-sm;
+    letter-spacing: .15rem;
+    text-transform: uppercase;
+    color: rgba($dark, .75);
+    margin-bottom: .5rem;
+}
+
+.blog-titulo {
+    margin-bottom: 1rem;
+    font-size: $fs-4xl;
+}
+
+.blog-texto {
+    font-size: $fs-lg;
+    line-height: 1.8;
+    color: rgba($dark, .9);
+ 
+}
+
+.blog-hero-com {
+    max-width: 85%;
+    opacity: .8;
+}
+
+.blog-section {
+    background: rgba($primary, 0.08);
+}
+
+
+.blog-categoria {
+    margin-bottom: 0;
+}
+
+.blog-section-title {
+    position: relative;
+    display: inline-block;
+    padding-top: 3rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 2px;
+        background: $primary;
+        border-radius: 999px;
+    }
+}
+
+/* Cards */
+
+.blog-card {
+    background: $white;
+    border-radius: $radius;
+    overflow: hidden;
+    height: 100%;
+    transition: .3s;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+}
+
+.blog-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.blog-card-body {
+    padding: 1.5rem;
+}
+
+.blog-card-titulo {
+    color: $primary;
+    font-size: $fs-xl;
+    margin-bottom: .8rem;
+    line-height: 1.5;
+}
+
+.blog-card-texto {
+    margin-bottom: 1.5rem;
+}
+
+.blog-link {
+    color: $primary;
+    text-decoration: none;
+    font-weight: 700;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+/* Modal */
+
+.modal-content {
+    border: none;
+    border-radius: $radius;
+}
+
+.modal-title {
+    color: $primary;
+    font-size: $fs-xl;
+    font-weight: 700;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba($dark,.08);
+}
+
+.modal-body p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* FAQ */
+
+.blog-faq {
+    background: $light;
+    padding: 5rem;
+}
+
+
+.accordion-item{
+    background: transparent;
+    border: none;
+}
+.accordion-button{
+    background: transparent !important;
+    box-shadow:none !important;
+    padding:1.6rem 0;
+    font-size:$fs-xl;
+    font-weight:700;
+
+    &:not(.collapsed){
+        color:$primary;
+    }
+}
+
+.accordion-body {
+    font-size: $fs-lg;
+    line-height: 1.7;
+}
+
+
+
+/* Instagram */
+
+.blog-instagram {
+    background: $light;
+    padding: 3rem 0 7rem !important;
+}
+
+.blog-instagram-tag {
+    color: $primary;
+    font-weight: 700;
+}
+
+.blog-reel {
+    border-radius: $radius;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.03);
+    }
+}

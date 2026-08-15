@@ -1,0 +1,812 @@
+/* RESPONSIVE */
+
+ /* SITE HOME */
+
+@media (max-width: 576px) {
+
+    /* NAV */
+
+    .navbar-brand img{
+        height:28px;
+    }
+
+    .navbar{
+        padding:.4rem 0;
+    }
+
+    .navbar-collapse{
+        margin-top:.5rem;
+        padding:1rem;
+        background:$secondary;
+        border-radius:$radius;
+    }
+
+    .navbar-nav{
+        gap:.5rem !important;
+    }
+
+    .navbar-nav .btn-outline-custom{
+        width:100%;
+        margin-left:0 !important;
+    }
+
+        .dropdown-menu{
+        max-height: 45vh;
+        overflow-y: auto;
+    }
+
+
+    /* HERO */
+
+    .hero-section{
+        min-height:100vh;
+        padding:2rem 1rem;
+    }
+
+    .hero-logo{
+        max-width:270px;
+    }
+
+    .hero-texto{
+        font-size:$fs-md;
+        line-height:1.6;
+    }
+
+    .btn-hero{
+        width:100%;
+    }
+
+    /* ESENCIA */
+
+    #esencia .row,
+    #filosofia .row{
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .esencia-section .row,
+    .filosofia-section .row,
+    .contacto-section .row{
+        flex-direction:column;
+        gap:2rem;
+    }
+
+    .esencia-img,
+    .filosofia-img{
+        max-width:100%;
+        margin:auto;
+        display:block;
+    }
+
+    .esencia-titulo,
+    .filosofia-titulo,
+    .esencia-texto,
+    .filosofia-texto,
+    .filosofia-cita,
+    .galeria-titulo,
+    .suscripcion-texto {
+        text-align:center;
+        margin: 0 auto;
+    }
+
+    .esencia-texto,
+    .escuela-texto,
+    .filosofia-texto,
+    .filosofia-cita,
+    .galeria-texto,
+    .testimonios-texto,
+    .testimonios-texto1,
+    .suscripcion-texto {
+        max-width:300px;
+        margin-top:1.5rem;
+    }
+
+    .esencia-pilares .pilar {
+    max-width: 260px;
+    margin: 0 1.35rem auto; ;
+    }
+
+    /* ESCUELAS */
+
+    .escuela-card{
+        height:auto;
+    }
+
+    .escuela-header h3{
+        font-size:$fs-lg;
+    }
+
+    .escuela-list li a{
+        font-size:$fs-lg;
+    }
+
+    .escuela-btn{
+        margin-top:1.5rem;
+    }
+    .btn-todas{
+        width:100%;
+    }
+
+    /* GALERÍA */
+
+    .galeria-titulo {
+        max-width:300px;
+    }
+
+    .galeria-img{
+        height:220px;
+    }
+
+    .testimonio-card{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 2rem;
+    }
+
+    #testimoniosCarousel {
+
+        .carousel-control-prev {
+            left: .75rem;
+        }
+
+        .carousel-control-next {
+            right: .75rem;
+        }
+
+        .carousel-control-prev i,
+        .carousel-control-next i {
+            background: transparent;
+            box-shadow: none;
+            padding: 0;
+            border-radius: 0;
+            font-size: 1.6rem;
+        }
+
+        .carousel-control-prev:hover i,
+        .carousel-control-next:hover i {
+            color: $primary;
+            background: transparent;
+        }
+    }
+
+    /* SUSCRIPCIÓN */
+
+    .suscripcion-form{
+        flex-direction:column;
+        gap:1rem;
+        border:none;
+        background:transparent;
+        box-shadow:none;
+    }
+
+    .suscripcion-input,
+    .suscripcion-btn{
+        width:100%;
+        border-radius:$radius;
+    }
+
+    /* CONTACTO */
+
+    .contact-card{
+        padding:2rem;
+    }
+    
+
+    .contacto-titulo,
+    .contacto-texto {
+        text-align:center;
+        margin: 1rem auto;
+        max-width:300px;
+    }
+     
+    .contacto-form{
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    
+    .contacto-titulo {
+        font-size: $fs-2xl;
+    }
+
+    .centro-titulo {
+        font-size: $fs-xl;
+    }
+
+    .btn-contacto{
+        width:100%;
+    }
+
+    .contacto-section .social-icons{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:1rem;
+    }
+
+    /* BLOG */
+
+/* Hero */
+
+.blog-hero {
+
+    .col-lg-5,
+    .col-lg-6 {
+        text-align: center;
+    }
+
+}
+
+.blog-tag {
+    text-align: center;
+}
+
+.blog-titulo {
+    text-align: center;
+    font-size: $fs-2xl;
+    max-width: 300px;
+    margin-left: 1rem;
+}
+
+.blog-texto,
+.blog-parrafo {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.blog-hero-com {
+    display: block;
+    max-width: 280px;
+    width: 85%;
+    margin: 2rem auto 0;
+    opacity: .9;
+}
+
+/* Categorías */
+
+.blog-categoria {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* FAQ */
+
+.blog-faq {
+    padding: 3rem 1rem;
+}
+
+.blog-faq .container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.blog-faq .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blog-faq-titulo {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
+}
+
+.blog-faq .accordion {
+    width: 100%;
+    max-width: 100%;
+}
+
+.blog-faq .accordion-item {
+    background: transparent;
+    border: none;
+}
+
+.blog-faq .accordion-button {
+    text-align: left;
+    font-size: $fs-lg;
+    line-height: 1.4;
+    width: 100%;
+    padding: 1.25rem 1rem;
+}
+
+.blog-faq .accordion-body {
+    text-align: left;
+    font-size: $fs-lg;
+    line-height: 1.7;
+    padding: 0 1rem 1rem;
+}
+
+/* Instagram */
+
+.blog-instagram {
+
+    .col-lg-4,
+    .col-lg-8 {
+        text-align: center;
+    }
+
+}
+
+.blog-instagram-tag,
+.blog-instagram-titulo {
+    text-align: center;
+}
+
+.blog-instagram-texto {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 2rem;
+}
+
+
+/* RESPONSIVE ESCUELAS */
+
+#catalogo-hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+#catalogo-hero .hero-logo {
+    max-width: 270px;
+}
+
+#catalogo-hero .hero-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fs-xl;
+    line-height: 1.2;
+}
+
+#escuelas-intro .intro-titulo,
+.escuelas-titulo-seccion {
+    text-align: center;
+}
+
+#escuelas-intro .intro-texto,
+.escuelas-texto {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ==========================
+   RESPONSIVE ESC FILOSOFÍA
+========================== */
+
+
+/* HERO */
+
+.escuela-hero,
+#filosofia-hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.escuela-hero .hero-logo,
+#filosofia-hero .hero-logo {
+    max-width: 270px;
+}
+
+.escuela-hero .hero-titulo,
+#filosofia-hero .hero-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fs-xl;
+    line-height: 1.2;
+}
+
+#filosofia-hero .hero-titulo {
+    font-size: $fs-4xl;
+}
+
+
+/* INTRO */
+
+.escuela-intro,
+#filosofia-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-intro-titulo,
+#filosofia-intro .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-texto,
+#filosofia-intro .escuela-intro-texto {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-img,
+#filosofia-intro .escuela-intro-img {
+    max-width: 100%;
+    margin-left: 0;
+}
+
+
+/* CURSOS */
+
+.escuela-cursos-section,
+#filosofia-cursos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#filosofia-cursos .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ==========================
+RESPONSIVE ESC CURSOS INFANTILES
+========================== */
+
+/* HERO */
+
+.escuela-hero,
+#infantiles-hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.escuela-hero .hero-logo,
+#infantiles-hero .hero-logo {
+    max-width: 270px;
+}
+
+.escuela-hero .hero-titulo,
+#infantiles-hero .hero-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fs-xl;
+    line-height: 1.2;
+}
+
+#infantiles-hero .hero-titulo {
+    font-size: $fs-4xl;
+}
+
+/* INTRO */
+
+.escuela-intro,
+#infantiles-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-intro-titulo,
+#infantiles-intro .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-texto,
+#infantiles-intro .escuela-intro-texto {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-img,
+#infantiles-intro .escuela-intro-img {
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* CURSOS */
+
+.escuela-cursos-section,
+#infantiles-cursos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#infantiles-cursos .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* ==========================
+RESPONSIVE ESC DANZAS
+========================== */
+
+/* HERO */
+
+.escuela-hero,
+#danzas-hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.escuela-hero .hero-logo,
+#danzas-hero .hero-logo {
+    max-width: 270px;
+}
+
+.escuela-hero .hero-titulo,
+#danzas-hero .hero-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fs-xl;
+    line-height: 1.2;
+}
+
+#danzas-hero .hero-titulo {
+    font-size: $fs-4xl;
+}
+
+/* INTRO */
+
+.escuela-intro,
+#danzas-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-intro-titulo,
+#danzas-intro .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-texto,
+#danzas-intro .escuela-intro-texto {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-img,
+#danzas-intro .escuela-intro-img {
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* CURSOS */
+
+.escuela-cursos-section,
+#danzas-cursos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#danzas-cursos .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* ==========================
+RESPONSIVE ESC MÚSICA
+========================== */
+
+/* HERO */
+
+.escuela-hero,
+#musica-hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.escuela-hero .hero-logo,
+#musica-hero .hero-logo {
+    max-width: 270px;
+}
+
+.escuela-hero .hero-titulo,
+#musica-hero .hero-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fs-xl;
+    line-height: 1.2;
+}
+
+#musica-hero .hero-titulo {
+    font-size: $fs-4xl;
+}
+
+/* INTRO */
+
+.escuela-intro,
+#musica-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-intro-titulo,
+#musica-intro .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-texto,
+#musica-intro .escuela-intro-texto {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-img,
+#musica-intro .escuela-intro-img {
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* CURSOS */
+
+.escuela-cursos-section,
+#musica-cursos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#musica-cursos .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+/* ==========================
+RESPONSIVE ESC ARTES Y MANUALIDADES
+========================== */
+
+/* HERO */
+
+.escuela-hero,
+#artes-hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+.escuela-hero .hero-logo,
+#artes-hero .hero-logo {
+    max-width: 270px;
+}
+
+.escuela-hero .hero-titulo,
+#artes-hero .hero-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: $fs-xl;
+    line-height: 1.2;
+}
+
+#artes-hero .hero-titulo {
+    font-size: $fs-4xl;
+}
+
+/* INTRO */
+
+.escuela-intro,
+#artes-intro {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-intro-titulo,
+#artes-intro .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-texto,
+#artes-intro .escuela-intro-texto {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.escuela-intro-img,
+#artes-intro .escuela-intro-img {
+    max-width: 100%;
+    margin-left: 0;
+}
+
+/* CURSOS */
+
+.escuela-cursos-section,
+#artes-cursos {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#artes-cursos .escuela-intro-titulo {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+
+    /* FOOTER */
+
+    .footer-top{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:1rem;
+    }
+
+    .footer-redes{
+        flex-direction:row;
+        padding-left:0;
+        gap:1rem;
+    }
+
+    .footer-redes::before{
+        display:none;
+    }
+
+
+    /* SCROLL TOP */
+
+    .scroll-top{
+        width:44px;
+        height:44px;
+        right:15px;
+        bottom:15px;
+    }
+
+    /* FIX */
+
+    html,
+    body{
+        overflow-x:hidden;
+    }
+}
+
+

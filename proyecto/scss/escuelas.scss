@@ -1,0 +1,106 @@
+/* HERO CATÁLOGO */
+
+#catalogo-hero {
+    min-height: 50vh;
+    background:
+        linear-gradient(to top, rgba($dark, 0.4), rgba($secondary, 0.1)),
+        linear-gradient(rgba($secondary, 0.65), rgba($primary, 1)),
+        url('../assets/imagenes/fondo.webp') center/cover no-repeat;
+}
+
+#catalogo-hero .hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+}
+
+#catalogo-hero .hero-titulo {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $fs-3xl;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+
+
+/* PROPUESTA */
+
+
+.escuelas-beneficios {
+    background: $light;
+}
+
+.beneficio-item {
+    gap: 1.25rem;
+    align-items: flex-start;
+}
+
+.beneficio-icono {
+    width: 3.5rem;
+    height: 3.5rem;
+    min-width: 3.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: $light;
+    border: 2px solid rgba($primary, .15);
+}
+
+.beneficio-icono {
+    width: 45px;
+    min-width: 45px;
+    height: auto;
+    min-height: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.beneficio-icono i {
+    font-size: 1.55rem;
+    color: $primary;
+}
+
+/* PROMOCIONES */
+
+.escuelas-promociones {
+    background: $light;
+}
+
+.promo-item {
+    margin: 0;
+}
+
+.promo-item img {
+    width: 100%;
+    display: block;
+    border-radius: $radius;
+}
+
+
+/* CTA */
+
+.escuelas-cta {
+    background: $white;
+}
+
+.escuelas-cta .escuelas-texto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.escuelas-cta .btn {
+    margin-top: .5rem;
+}

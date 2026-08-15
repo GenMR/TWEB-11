@@ -1,0 +1,554 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.125rem;
+  color: #333333;
+  overflow-x: hidden;
+  background-color: #f8f9fa;
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline-custom:hover {
+  background-color: #f8f9fa;
+  border-color: #ffffff;
+  color: #159AC0 !important;
+}
+
+.btn-outline-primary {
+  color: #159AC0;
+  border-color: #159AC0;
+}
+.btn-outline-primary:hover {
+  background: #159AC0;
+  color: #ffffff;
+}
+
+.btn-primary-custom {
+  font-size: 1.125rem;
+  background-color: #0B6F89;
+  border: 2px solid #0B6F89;
+  color: #ffffff;
+  border-radius: 0.375rem;
+  padding: 0.375rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  outline: #0B6F89;
+}
+.btn-primary-custom:hover {
+  background-color: #f8f9fa;
+  border-color: #0B6F89;
+  color: #0B6F89 !important;
+}
+
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  background-image: linear-gradient(90deg, rgba(21, 154, 192, 0.05) 0%, rgba(21, 154, 192, 0.08) 42%, rgba(11, 111, 137, 0.18) 100%), url("../img/hero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 54%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(4.177027027, 42.15, 52.022972973, 0.82), rgba(11, 111, 137, 0.55));
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+  z-index: 0;
+  pointer-events: none;
+  animation: slideInRight 1.2s ease-out both;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  right: 4rem;
+  max-width: 38rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+}
+
+.hero-logo {
+  position: relative;
+  left: 8rem;
+  width: 100%;
+  max-width: 15rem;
+  filter: brightness(0) invert(1);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+.hero-title span {
+  display: block;
+}
+
+.hero-title-inicio {
+  color: #ffffff;
+}
+
+.hero-title-acento {
+  position: relative;
+  left: 6rem;
+  margin: 0.5rem 0;
+  color: rgb(52.0918918919, 200.2, 238.7081081081);
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.hero-title-final {
+  position: relative;
+  left: 9rem;
+  color: #ffffff;
+}
+
+.catalogo-titulo {
+  font-size: 3rem;
+  color: #0B6F89;
+  font-weight: 700;
+}
+
+.catalogo-parrafo {
+  font-size: 1.35rem;
+}
+
+.escuela-card {
+  overflow: visible;
+}
+.escuela-card .row {
+  align-items: stretch;
+}
+
+.escuela-visual {
+  position: relative;
+  min-height: 19rem;
+}
+
+.escuela-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.escuela-label {
+  position: absolute;
+  top: 1.5rem;
+  left: -2rem;
+  z-index: 2;
+  min-width: 10rem;
+  padding: 0.4rem 1.5rem;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  clip-path: inset(0 round 0 1.25rem 0 1.25rem);
+}
+
+.escuela-invertida .escuela-label {
+  left: auto;
+  right: -2rem;
+  clip-path: inset(0 round 1.25rem 0 1.25rem 0);
+}
+
+.escuela-info {
+  display: flex;
+}
+
+.escuela-tabla {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+  color: #ffffff;
+}
+.escuela-tabla thead {
+  background-color: darken;
+}
+.escuela-tabla th,
+.escuela-tabla td {
+  padding: 0.3rem 0.4rem;
+  vertical-align: middle;
+  line-height: 1.3;
+}
+.escuela-tabla th:last-child,
+.escuela-tabla td:last-child {
+  border-right: none;
+}
+.escuela-tabla thead th {
+  font-weight: 600;
+  text-align: center;
+}
+.escuela-tabla tbody th {
+  width: 25%;
+  font-weight: 700;
+  text-align: left;
+  padding-left: 1.6rem;
+}
+.escuela-tabla td {
+  text-align: center;
+}
+.escuela-tabla th:nth-child(1),
+.escuela-tabla td:nth-child(1) {
+  width: 30%;
+}
+.escuela-tabla th:nth-child(2),
+.escuela-tabla td:nth-child(2) {
+  width: 31%;
+  line-height: 1.7;
+}
+.escuela-tabla th:nth-child(3),
+.escuela-tabla td:nth-child(3) {
+  width: 17%;
+}
+.escuela-tabla th:nth-child(4),
+.escuela-tabla td:nth-child(4) {
+  width: 22%;
+}
+.escuela-tabla tbody tr:last-child th,
+.escuela-tabla tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.escuela-card-corta .row {
+  align-items: stretch;
+}
+.escuela-card-corta .escuela-visual {
+  position: relative;
+}
+.escuela-card-corta .escuela-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.escuela-card:not(.escuela-invertida) .escuela-img {
+  border-radius: 1rem 0 0 0;
+}
+
+.escuela-invertida .escuela-img {
+  border-radius: 0 1rem 0 0;
+}
+
+.escuela-artes .escuela-label,
+.escuela-artes .escuela-tabla tbody {
+  background-color: #6F2A92;
+}
+.escuela-artes .escuela-tabla thead {
+  background-color: rgb(74.8659574468, 28.3276595745, 98.4723404255);
+}
+
+.escuela-danzas .escuela-label,
+.escuela-danzas .escuela-tabla tbody {
+  background-color: #A8C800;
+}
+.escuela-danzas .escuela-tabla thead {
+  background-color: rgb(116.592, 138.8, 0);
+}
+
+.escuela-musica .escuela-label,
+.escuela-musica .escuela-tabla tbody {
+  background-color: #4AC0CC;
+}
+.escuela-musica .escuela-tabla thead {
+  background-color: rgb(47.6586206897, 157.9275862069, 169.1413793103);
+}
+
+.escuela-salud .escuela-label,
+.escuela-salud .escuela-tabla tbody {
+  background-color: #e6b800;
+}
+.escuela-salud .escuela-tabla thead {
+  background-color: rgb(168.8, 135.04, 0);
+}
+
+.escuela-infantil .escuela-label,
+.escuela-infantil .escuela-tabla tbody {
+  background-color: #1292C8;
+}
+.escuela-infantil .escuela-tabla thead {
+  background-color: rgb(11.6834862385, 94.7660550459, 129.8165137615);
+}
+
+.escuela-cultura .escuela-label,
+.escuela-cultura .escuela-tabla tbody {
+  background-color: #F39A1A;
+}
+.escuela-cultura .escuela-tabla thead {
+  background-color: rgb(182.9149377593, 111.8257261411, 9.5850622407);
+}
+
+.escuela-ciencias .escuela-label,
+.escuela-ciencias .escuela-tabla tbody {
+  background-color: #45B0E5;
+}
+.escuela-ciencias .escuela-tabla thead {
+  background-color: rgb(27.1650943396, 138.9599056604, 194.3349056604);
+}
+
+.escuela-audiovisual .escuela-label,
+.escuela-audiovisual .escuela-tabla tbody {
+  background-color: #233B7D;
+}
+.escuela-audiovisual .escuela-tabla thead {
+  background-color: rgb(18.265625, 30.790625, 65.234375);
+}
+
+.escuela-historia .escuela-label,
+.escuela-historia .escuela-tabla tbody {
+  background-color: #B8874A;
+}
+.escuela-historia .escuela-tabla thead {
+  background-color: rgb(130.3630952381, 95.0714285714, 51.1369047619);
+}
+
+.escuela-filosofia .escuela-label,
+.escuela-filosofia .escuela-tabla tbody {
+  background-color: #005F56;
+}
+.escuela-filosofia .escuela-tabla thead {
+  background-color: rgb(0, 18.5, 16.7473684211);
+}
+
+.footer {
+  background-color: #159AC0;
+  color: #ffffff;
+}
+
+.footer-logo {
+  width: 15rem;
+  filter: brightness(0) invert(1);
+}
+
+.footer-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.footer-icono:hover {
+  background-color: #ffffff;
+  color: #159AC0;
+  transform: translateY(-0.25rem);
+}
+
+.footer-copy {
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 3rem;
+  right: 1.5rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #159AC0;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 999;
+}
+
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: 100vh;
+    background-position: 35% center;
+  }
+  .hero-section::after {
+    width: 100%;
+    background: linear-gradient(rgba(4.177027027, 42.15, 52.022972973, 0.45), rgba(11, 111, 137, 0.65));
+    clip-path: none;
+  }
+  .hero-section .col-lg-6:first-child {
+    display: none;
+  }
+  .hero-content {
+    right: 0;
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+  .hero-logo {
+    left: 0;
+    max-width: 14rem;
+  }
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  .hero-title-acento {
+    left: 0;
+    font-size: 2.5rem;
+  }
+  .hero-title-final {
+    left: 0;
+  }
+  .catalogo-parrafo {
+    font-size: 1.125rem;
+  }
+  .escuela-visual {
+    min-height: 22rem;
+  }
+  .escuela-img {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .escuela-card-corta .escuela-img {
+    position: relative;
+    inset: auto;
+    height: 22rem;
+  }
+  .escuela-label,
+  .escuela-invertida .escuela-label {
+    top: 1.5rem;
+    left: 0;
+    right: auto;
+    clip-path: inset(0 round 0 1.25rem 0 1.25rem);
+  }
+  .escuela-info {
+    width: 100%;
+  }
+  .escuela-tabla {
+    font-size: 0.875rem;
+  }
+  .escuela-tabla th,
+  .escuela-tabla td {
+    padding: 0.6rem 0.4rem;
+  }
+  .escuela-tabla tbody th {
+    padding-left: 1rem;
+  }
+  .footer-logo {
+    width: 13rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .hero-section {
+    background-position: 32% center;
+  }
+  .hero-content {
+    right: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem 0.75rem;
+  }
+  .hero-logo {
+    left: 0;
+    max-width: 10rem;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+  .hero-title-acento {
+    left: 0;
+    font-size: 1.8rem;
+  }
+  .hero-title-final {
+    left: 0;
+  }
+  .btn-outline-custom {
+    left: 0;
+  }
+  .catalogo-titulo {
+    font-size: 2rem;
+  }
+  .catalogo-parrafo {
+    font-size: 1.175rem;
+  }
+  .escuela-visual {
+    min-height: 14rem;
+  }
+  .escuela-card-corta .escuela-img {
+    height: 14rem;
+  }
+  .escuela-label,
+  .escuela-invertida .escuela-label {
+    top: 1rem;
+    left: 0;
+    right: auto;
+    min-width: 8rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.175rem;
+  }
+  .escuela-info {
+    display: block;
+    overflow: visible;
+  }
+  .escuela-tabla {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    font-size: 0.875rem;
+  }
+  .escuela-tabla thead {
+    display: none;
+  }
+  .escuela-tabla tbody {
+    display: block;
+  }
+  .escuela-tabla tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  .escuela-tabla th,
+  .escuela-tabla td {
+    display: block;
+    width: 100% !important;
+    padding: 0.25rem 0;
+    text-align: left;
+  }
+  .escuela-tabla tbody th {
+    padding-left: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1.125rem;
+  }
+  .escuela-tabla td {
+    font-size: 0.875rem;
+  }
+  .escuela-tabla tbody tr:last-child {
+    border-bottom: none;
+  }
+  .footer {
+    text-align: center;
+  }
+  .footer-logo {
+    width: 11rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

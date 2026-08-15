@@ -1,0 +1,169 @@
+/* MIXIN */
+
+@mixin escuela($color,$imagen){
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.20), rgba($color, 0.10)),
+        linear-gradient(rgba($color,.95), rgba($color,.70)),
+        url($imagen);
+    background-repeat:no-repeat,no-repeat,no-repeat;
+    background-size:
+        cover, cover, 55%;
+    background-position:
+        center, center, right -2rem bottom;
+
+    .catalogo-icono i {
+        color: $color;
+    }
+
+    .catalogo-btn:hover {
+        color: $color !important;
+    }
+}
+
+/* CARD */
+
+.catalogo-card{
+    display:flex;
+    flex-direction:column;
+    min-height: 340px;
+    padding:1.5rem;
+    border-radius:$radius;
+    overflow:hidden;
+    color:$white;
+    box-shadow:$shadow;
+    transition:.35s;
+}
+
+.catalogo-card,
+.catalogo-card h3,
+.catalogo-card p,
+.catalogo-card .catalogo-btn,
+.catalogo-card .catalogo-cursos p::before {
+    color: $white !important;
+}
+
+.catalogo-card h3,
+.catalogo-card p,
+.catalogo-card .catalogo-cursos p::before {
+    text-shadow: 0 0.15rem 0.3rem rgba(0, 0, 0, 0.35);
+}
+
+.catalogo-card:hover{
+    transform:translateY(-4px);
+}
+
+.catalogo-link{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    color:inherit;
+    text-decoration:none;
+}
+
+/* HEADER */
+
+.catalogo-header{
+    display:flex;
+    align-items:center;
+    gap:1rem;
+    margin-bottom:1rem;
+    padding-bottom:1rem;
+    border-bottom:1px solid rgba($white,.18);
+}
+
+.catalogo-icono{
+    width:45px;
+    height:45px;
+    min-width:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:$white;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15);
+}
+
+.catalogo-icono i{
+    font-size:1.55rem;
+}
+
+.catalogo-header h3{
+    margin:0;
+    color:$white;
+    font-size:$fs-xl;
+    font-weight:800;
+    line-height:1.1;
+}
+
+/* CURSOS */
+
+.catalogo-cursos{
+    display:flex;
+    flex-direction:column;
+    gap:.45rem;
+    flex:1;
+}
+
+.catalogo-cursos p{
+    margin:0;
+    display:flex;
+    align-items:flex-start;
+    gap:.55rem;
+    line-height:1.4;
+    font-size:$fs-md;
+}
+
+.catalogo-cursos p::before{
+    content:"•";
+    flex-shrink:0;
+}
+
+/* COLORES */
+
+.catalogo-filosofia{
+    @include escuela($filosofia,"../assets/imagenes/card-filo.webp");
+}
+
+.catalogo-infantil{
+    @include escuela($infantil,"../assets/imagenes/card-infantil.webp");
+}
+
+.catalogo-danzas{
+    @include escuela($danzas,"../assets/imagenes/card-danza.webp");
+}
+
+.catalogo-artes{
+    @include escuela($artes,"../assets/imagenes/card-arte.webp");
+}
+
+.catalogo-musica{
+    @include escuela($musica,"../assets/imagenes/card-musica.webp");
+}
+
+.catalogo-salud{
+    @include escuela($salud,"../assets/imagenes/card-salud.webp");
+}
+
+.catalogo-ciencias{
+    @include escuela($ciencias,"../assets/imagenes/card-ciencias.webp");
+}
+
+.catalogo-cultura{
+    @include escuela($cultura-general,"../assets/imagenes/card-cultura.webp");
+}
+
+.catalogo-teatro{
+    @include escuela($teatro,"../assets/imagenes/card-teatro.webp");
+}
+
+.catalogo-audiovisual{
+    @include escuela($audiovisual,"../assets/imagenes/card-audiovisual.webp");
+}
+
+.catalogo-letras{
+    @include escuela($letras,"../assets/imagenes/card-letras.webp");
+}
+
+.catalogo-historia{
+    @include escuela($historia,"../assets/imagenes/card-historia.webp");
+}

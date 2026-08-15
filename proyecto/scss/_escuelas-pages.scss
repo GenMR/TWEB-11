@@ -1,0 +1,449 @@
+/* ==========================
+   HERO
+========================== */
+
+.escuela-hero,
+#filosofia-hero {
+    min-height: 50vh;
+
+    background:
+        linear-gradient(to top, rgba($dark, 0.4), rgba($secondary, 0.1)),
+        linear-gradient(rgba($secondary, 0.65), rgba($primary, 1)),
+        url('../assets/imagenes/fondo.webp') center/cover no-repeat;
+}
+
+.escuela-hero .hero-logo,
+#filosofia-hero .hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.escuela-hero .hero-titulo,
+#filosofia-hero .hero-titulo {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $fs-3xl;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+#filosofia-hero .hero-titulo{
+        font-size: $fs-5xl;
+}
+
+/* ==========================
+   INTRO
+========================== */
+
+.escuela-intro,
+#filosofia-intro {
+    background: $white;
+}
+
+.escuela-intro-titulo,
+#filosofia-intro .escuela-intro-titulo {
+    margin-left: 4rem;
+}
+
+.escuela-intro-texto,
+#filosofia-intro .escuela-intro-texto {
+    max-width: 85%;
+    margin-left: 4rem;
+}
+
+.escuela-intro-img,
+#filosofia-intro .escuela-intro-img {
+    max-width: 80%;
+    margin-left: 2.5rem;
+    border: 1px solid rgba($primary, .25);
+    border-radius: $radius;
+}
+
+.section-divider {
+    position: relative;
+}
+
+.section-divider::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -12px;
+    width: 2px;
+    height: 90%;
+    background: rgba($primary, .10);
+}
+
+
+/* ==========================
+   CURSOS
+========================== */
+
+.escuela-cursos-section,
+#filosofia-cursos {
+    background: $light;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#filosofia-cursos .escuela-intro-titulo {
+    margin-left: 0;
+}
+
+
+/* ==========================
+HERO
+========================== */
+
+.escuela-hero,
+#infantiles-hero {
+    min-height: 50vh;
+
+    background:
+        linear-gradient(to top, rgba($dark, 0.4), rgba($secondary, 0.1)),
+        linear-gradient(rgba($secondary, 0.65), rgba($primary, 1)),
+        url('../assets/imagenes/fondo.webp') center/cover no-repeat;
+}
+
+.escuela-hero .hero-logo,
+#infantiles-hero .hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.escuela-hero .hero-titulo,
+#infantiles-hero .hero-titulo {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $fs-3xl;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+#infantiles-hero .hero-titulo {
+    font-size: $fs-5xl;
+}
+
+/* ==========================
+INTRO
+========================== */
+
+.escuela-intro,
+#infantiles-intro {
+    background: $white;
+}
+
+.escuela-intro-titulo,
+#infantiles-intro .escuela-intro-titulo {
+    margin-left: 4rem;
+}
+
+.escuela-intro-texto,
+#infantiles-intro .escuela-intro-texto {
+    max-width: 85%;
+    margin-left: 4rem;
+}
+
+.escuela-intro-img,
+#infantiles-intro .escuela-intro-img {
+    max-width: 80%;
+    margin-left: 2.5rem;
+    border: 1px solid rgba($primary, .25);
+    border-radius: $radius;
+}
+
+
+/* ==========================
+CURSOS
+========================== */
+
+.escuela-cursos-section,
+#infantiles-cursos {
+    background: $light;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#infantiles-cursos .escuela-intro-titulo {
+    margin-left: 0;
+}
+
+/* ==========================
+HERO
+========================== */
+
+.escuela-hero,
+#danzas-hero {
+    min-height: 50vh;
+
+    background:
+        linear-gradient(to top, rgba($dark, 0.4), rgba($secondary, 0.1)),
+        linear-gradient(rgba($secondary, 0.65), rgba($primary, 1)),
+        url('../assets/imagenes/fondo.webp') center/cover no-repeat;
+}
+
+.escuela-hero .hero-logo,
+#danzas-hero .hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.escuela-hero .hero-titulo,
+#danzas-hero .hero-titulo {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $fs-3xl;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+#danzas-hero .hero-titulo {
+    font-size: $fs-5xl;
+}
+
+/* ==========================
+INTRO
+========================== */
+
+.escuela-intro,
+#danzas-intro {
+    background: $white;
+}
+
+.escuela-intro-titulo,
+#danzas-intro .escuela-intro-titulo {
+    margin-left: 4rem;
+}
+
+.escuela-intro-texto,
+#danzas-intro .escuela-intro-texto {
+    max-width: 85%;
+    margin-left: 4rem;
+}
+
+.escuela-intro-img,
+#danzas-intro .escuela-intro-img {
+    max-width: 80%;
+    margin-left: 2.5rem;
+    border: 1px solid rgba($primary, .25);
+    border-radius: $radius;
+}
+
+.section-divider {
+    position: relative;
+}
+
+.section-divider::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -12px;
+    width: 2px;
+    height: 90%;
+    background: rgba($primary, .10);
+}
+
+/* ==========================
+CURSOS
+========================== */
+
+.escuela-cursos-section,
+#danzas-cursos {
+    background: $light;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#danzas-cursos .escuela-intro-titulo {
+    margin-left: 0;
+}
+
+
+/* ==========================
+HERO
+========================== */
+
+.escuela-hero,
+#musica-hero {
+    min-height: 50vh;
+
+    background:
+        linear-gradient(to top, rgba($dark, 0.4), rgba($secondary, 0.1)),
+        linear-gradient(rgba($secondary, 0.65), rgba($primary, 1)),
+        url('../assets/imagenes/fondo.webp') center/cover no-repeat;
+}
+
+.escuela-hero .hero-logo,
+#musica-hero .hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.escuela-hero .hero-titulo,
+#musica-hero .hero-titulo {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $fs-3xl;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+#musica-hero .hero-titulo {
+    font-size: $fs-5xl;
+}
+
+/* ==========================
+INTRO
+========================== */
+
+.escuela-intro,
+#musica-intro {
+    background: $white;
+}
+
+.escuela-intro-titulo,
+#musica-intro .escuela-intro-titulo {
+    margin-left: 4rem;
+}
+
+.escuela-intro-texto,
+#musica-intro .escuela-intro-texto {
+    max-width: 85%;
+    margin-left: 4rem;
+}
+
+.escuela-intro-img,
+#musica-intro .escuela-intro-img {
+    max-width: 80%;
+    margin-left: 2.5rem;
+    border: 1px solid rgba($primary, .25);
+    border-radius: $radius;
+}
+
+.section-divider {
+    position: relative;
+}
+
+.section-divider::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -12px;
+    width: 2px;
+    height: 90%;
+    background: rgba($primary, .10);
+}
+
+/* ==========================
+CURSOS
+========================== */
+
+.escuela-cursos-section,
+#musica-cursos {
+    background: $light;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#musica-cursos .escuela-intro-titulo {
+    margin-left: 0;
+}
+
+/* ==========================
+HERO
+========================== */
+
+.escuela-hero,
+#artes-hero {
+    min-height: 50vh;
+
+    background:
+        linear-gradient(to top, rgba($dark, 0.4), rgba($secondary, 0.1)),
+        linear-gradient(rgba($secondary, 0.65), rgba($primary, 1)),
+        url('../assets/imagenes/fondo.webp') center/cover no-repeat;
+}
+
+.escuela-hero .hero-logo,
+#artes-hero .hero-logo {
+    max-width: 500px;
+    filter: brightness(0) invert(1);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.escuela-hero .hero-titulo,
+#artes-hero .hero-titulo {
+    max-width: 900px;
+    margin: 0 auto;
+    color: $white;
+    font-size: $fs-3xl;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+#artes-hero .hero-titulo {
+    font-size: $fs-5xl;
+}
+
+/* ==========================
+INTRO
+========================== */
+
+.escuela-intro,
+#artes-intro {
+    background: $white;
+}
+
+.escuela-intro-titulo,
+#artes-intro .escuela-intro-titulo {
+    margin-left: 4rem;
+}
+
+.escuela-intro-texto,
+#artes-intro .escuela-intro-texto {
+    max-width: 85%;
+    margin-left: 4rem;
+}
+
+.escuela-intro-img,
+#artes-intro .escuela-intro-img {
+    max-width: 80%;
+    margin-left: 2.5rem;
+    border: 1px solid rgba($primary, .25);
+    border-radius: $radius;
+}
+
+.section-divider {
+    position: relative;
+}
+
+.section-divider::after {
+    content: "";
+    position: absolute;
+    top: 5%;
+    left: -12px;
+    width: 2px;
+    height: 90%;
+    background: rgba($primary, .10);
+}
+
+/* ==========================
+CURSOS
+========================== */
+
+.escuela-cursos-section,
+#artes-cursos {
+    background: $light;
+}
+
+.escuela-cursos-section .escuela-intro-titulo,
+#artes-cursos .escuela-intro-titulo {
+    margin-left: 0;
+}

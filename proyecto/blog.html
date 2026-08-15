@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Metadatos-->
+    <title>Blog | Centro Cultural Victoria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="Centro Cultural Victoria, Nueva Acrópolis, filosofía, cultura, voluntariado, cursos, Costa Rica">
+    <meta name="description"
+        content="Centro Cultural Victoria de Nueva Acrópolis. Cursos de filosofía, blog comunitario, arte, cultura, bienestar y voluntariado en Costa Rica.">
+    <meta name="copyright" content="Centro Cultural Victoria">
+    <meta name="author" content="Génesis Méndez | Desarrollo web">
+    <meta name="generator" content="Framework Web Bootstrap V5">
+    <meta name="robots" content="index, follow">
+
+    <!-- Carga css / js -->
+    <link rel="icon" href="assets/imagenes/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,600;6..12,700;6..12,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg sticky-top nav-ccv" id="navbar">
+        <div class="container py-3">
+
+            <a class="navbar-brand me-0 ps-0" href="index.html" tabindex="0">
+                <img src="assets/imagenes/logo.png" alt="Logotipo del Centro Cultural Victoria de Nueva Acrópolis">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#menuPrincipal" tabindex="0">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html" tabindex="0">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="escuelas.html" id="escuelasDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" tabindex="0">
+                            Escuelas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="escuelasDropdown">
+                            <li><a class="dropdown-item" href="escuelas.html" tabindex="0">Escuelas</a></li>
+                            <li><a class="dropdown-item" href="esc-filosofia.html" tabindex="0">Filosofía</a></li>
+                            <li><a class="dropdown-item" href="esc-infantil.html" tabindex="0">Cursos
+                                    Infantiles</a></li>
+                            <li><a class="dropdown-item" href="esc-danzas.html" tabindex="0">Danzas</a></li>
+                            <li><a class="dropdown-item" href="esc-musica.html" tabindex="0">Música</a></li>
+                            <li><a class="dropdown-item" href="esc-artes.html" tabindex="0">Artes y
+                                    Manualidades</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html" tabindex="0">Comunidad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html" tabindex="0">Contacto</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-custom ms-3" href="t3catalogo/index.html"
+                            tabindex="0">Matricularme</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO BLOG -->
+
+    <section id="blog-hero" class="blog-hero py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5">
+
+                    <span class="blog-tag">
+                        BLOG
+                    </span>
+
+                    <h2 class="blog-titulo">
+                        Blog de la Comunidad
+                    </h2>
+
+                    <img src="assets/imagenes/blog/com.png" alt="" aria-hidden="true" class="img-fluid blog-hero-com">
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <p class="blog-texto mt-5">
+                        Descubrí noticias, actividades, reflexiones y experiencias que nacen de la
+                        vida del Centro Cultural Victoria. Un espacio para compartir filosofía,
+                        voluntariado, cultura y eventos que inspiran el crecimiento personal y la
+                        vida en comunidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="blog-filosofia" class="blog-section py-5">
+
+        <div class="container">
+
+            <div class="row mb-4">
+
+                <div class="col-12">
+
+                    <h2 class="blog-categoria">
+                        Filosofía
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CARD 1 -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/democrito.webp" class="img-fluid blog-img"
+                            alt="Busto de Demócrito, filósofo de la Antigua Grecia, representado con barba y expresión serena.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Demócrito: el filósofo que ríe
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Descubrí el legado de uno de los grandes filósofos de la antigüedad y su visión
+                                optimista sobre la vida y la naturaleza humana.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalDemocrito">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalDemocrito" tabindex="-1" aria-labelledby="modalDemocritoLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalDemocritoLabel">
+                                    Demócrito: el filósofo que ríe
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Junio 2026
+                                </p>
+
+                                <p>
+                                    Demócrito fue uno de los pensadores más influyentes de la Antigua Grecia y es
+                                    recordado por su actitud serena y optimista frente a la vida. Sus enseñanzas invitan
+                                    a cultivar la alegría interior, el conocimiento y la virtud como pilares del
+                                    desarrollo humano.
+                                </p>
+
+                                <p>
+                                    En esta reflexión compartimos algunas de sus principales ideas y cómo continúan
+                                    siendo una inspiración para enfrentar los desafíos cotidianos con sabiduría,
+                                    equilibrio y buen humor.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/bhagavad.webp" class="img-fluid blog-img"
+                            alt="Representación de Krishna y Arjuna en un carro tirado por caballos durante la batalla del Bhagavad Gita.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Bhagavad Gita y la paz interior
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una reflexión sobre la batalla interior que enfrenta cada ser humano y el camino hacia
+                                una
+                                vida más consciente y equilibrada.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalBhagavad">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalBhagavad" tabindex="-1" aria-labelledby="modalBhagavadLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalBhagavadLabel">
+                                    La batalla del Bhagavad Gita y la conquista de la paz interior
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Junio 2026
+                                </p>
+
+                                <p>
+                                    El Bhagavad Gita presenta una profunda enseñanza sobre el conflicto interior que
+                                    cada
+                                    persona enfrenta en su proceso de crecimiento. Más allá de una batalla histórica, la
+                                    obra simboliza la lucha entre nuestras fortalezas y debilidades, invitándonos a
+                                    actuar
+                                    con conciencia y serenidad.
+                                </p>
+
+                                <p>
+                                    Durante esta actividad reflexionamos sobre cómo estos principios continúan siendo
+                                    una
+                                    guía para afrontar los desafíos cotidianos, desarrollar el carácter y construir una
+                                    paz
+                                    interior basada en el conocimiento y la acción correcta.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/deportes.webp" class="img-fluid blog-img"
+                            alt="Representación de tres corredores en una escena de atletismo de la Antigua Grecia.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Filosofía en el deporte
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Descubrí cómo la práctica deportiva puede convertirse en una herramienta para fortalecer
+                                el carácter, la disciplina y el trabajo en equipo.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalDeporte">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="modal fade" id="modalDeporte" tabindex="-1" aria-labelledby="modalDeporteLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalDeporteLabel">
+                                    Filosofía en el deporte
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Junio 2026
+                                </p>
+
+                                <p>
+                                    El deporte representa mucho más que una actividad física; es un espacio donde se
+                                    desarrollan valores como la perseverancia, el respeto, la disciplina y la
+                                    cooperación. Desde la filosofía práctica, cada entrenamiento se convierte en una
+                                    oportunidad para conocerse mejor y superar los propios límites.
+                                </p>
+
+                                <p>
+                                    En esta actividad exploramos cómo los principios filosóficos pueden aplicarse al
+                                    ámbito deportivo para fortalecer el carácter, fomentar el trabajo en equipo y
+                                    afrontar los desafíos con una actitud positiva y consciente.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/filosofas.webp" class="img-fluid blog-img"
+                            alt="Collage sobre mujeres filósofas de la historia, con retratos de diversas pensadoras.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Filósofas en la historia
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Un recorrido por la vida y el legado de mujeres que, con sus ideas, enriquecieron la
+                                filosofía y dejaron una huella en la historia.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalFilosofas">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalFilosofas" tabindex="-1" aria-labelledby="modalFilosofasLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalFilosofasLabel">
+                                    Filósofas en la historia
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Julio 2026
+                                </p>
+
+                                <p>
+                                    A lo largo de la historia, numerosas mujeres realizaron valiosos aportes al
+                                    pensamiento filosófico, promoviendo la reflexión sobre la ética, la educación, la
+                                    justicia y el desarrollo humano. Sus ideas continúan inspirando nuevas generaciones
+                                    a cuestionar, aprender y construir una sociedad más consciente.
+                                </p>
+
+                                <p>
+                                    Esta publicación busca reconocer su legado y destacar la importancia de conocer
+                                    diversas voces dentro de la historia de la filosofía, fomentando una visión más
+                                    amplia y enriquecedora del conocimiento.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog-voluntariado" class="blog-section py-5">
+
+        <div class="container">
+
+            <div class="row mb-4">
+
+                <div class="col-12">
+
+                    <h2 class="blog-categoria">
+                        Voluntariado
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/reto.webp" class="img-fluid blog-img"
+                            alt="Afiche del Reto por la Tierra que invita a limpiar espacios públicos y cuidar el medio ambiente.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Reto por la Tierra
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una iniciativa de voluntariado que promueve el cuidado del ambiente mediante
+                                acciones concretas para proteger nuestro entorno.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalTierra">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <div class="modal fade" id="modalTierra" tabindex="-1" aria-labelledby="modalTierraLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalTierraLabel">
+                                    Reto por la Tierra
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Julio 2026
+                                </p>
+
+                                <p>
+                                    Como parte del compromiso con el cuidado del planeta, miembros y voluntarios
+                                    participaron en el <strong>Reto por la Tierra</strong>, una iniciativa orientada
+                                    a generar un impacto positivo en el ambiente mediante acciones sencillas pero
+                                    significativas para la comunidad.
+                                </p>
+
+                                <p>
+                                    Estas actividades fortalecen la conciencia ambiental, fomentan el trabajo en
+                                    equipo y demuestran que pequeños esfuerzos, realizados de manera constante,
+                                    pueden contribuir a la construcción de un entorno más limpio, responsable y
+                                    sostenible para todos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/poli.webp" class="img-fluid blog-img"
+                            alt="Persona voluntaria con camiseta de Nueva Acrópolis participando en una actividad de renovación y pintura comunitaria.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Renovación del Polideportivo
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una jornada de servicio donde el trabajo en equipo permitió embellecer un espacio
+                                público para el disfrute de toda la comunidad.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalPolideportivo">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalPolideportivo" tabindex="-1" aria-labelledby="modalPolideportivoLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalPolideportivoLabel">
+                                    Renovación del Polideportivo
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Mayo 2026
+                                </p>
+
+                                <p>
+                                    Con entusiasmo y espíritu de servicio, voluntarios del Centro Cultural Victoria
+                                    participaron en una jornada de renovación del Polideportivo, colaborando en
+                                    labores de pintura y embellecimiento de este espacio utilizado por niños,
+                                    jóvenes y familias de la comunidad.
+                                </p>
+
+                                <p>
+                                    Más allá de mejorar la infraestructura, la actividad fortaleció valores como la
+                                    cooperación, el compromiso ciudadano y el cuidado de los espacios compartidos,
+                                    demostrando que el voluntariado es una forma concreta de generar un impacto
+                                    positivo en la sociedad.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/donacion.webp" class="img-fluid blog-img"
+                            alt="Afiche de campaña con persona realizando una donación de sangre durante una campaña de donación.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Campaña de Donación de Sangre
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una jornada solidaria que invitó a la comunidad a donar vida mediante un acto de
+                                generosidad y compromiso con quienes más lo necesitan.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalDonacion">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalDonacion" tabindex="-1" aria-labelledby="modalDonacionLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalDonacionLabel">
+                                    Campaña de Donación de Sangre
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Abril 2026
+                                </p>
+
+                                <p>
+                                    En conjunto con organizaciones comprometidas con la salud y el bienestar de la
+                                    comunidad, se llevó a cabo una campaña de donación de sangre con el propósito de
+                                    apoyar a quienes requieren transfusiones y tratamientos médicos.
+                                </p>
+
+                                <p>
+                                    Cada donación representa una oportunidad para salvar vidas y fortalecer la
+                                    solidaridad entre las personas. A través de iniciativas como esta, reafirmamos
+                                    el valor del servicio desinteresado y el compromiso con el bienestar colectivo.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/caminata.webp" class="img-fluid blog-img"
+                            alt="Manos de varias personas unidas alrededor de un lazo rosa en apoyo a la lucha contra el cáncer de mama.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Caminata contra el Cáncer de Mama
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una jornada de unión y esperanza para promover la prevención, el acompañamiento y la
+                                solidaridad con quienes enfrentan esta enfermedad.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalCaminata">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalCaminata" tabindex="-1" aria-labelledby="modalCaminataLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalCaminataLabel">
+                                    Caminata contra el Cáncer de Mama
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Octubre 2026
+                                </p>
+
+                                <p>
+                                    Miembros del Centro Cultural Victoria participaron en una caminata conmemorativa
+                                    dedicada a crear conciencia sobre la importancia de la prevención y la detección
+                                    temprana del cáncer de mama. La actividad reunió a personas de diferentes edades
+                                    en un ambiente de apoyo, respeto y solidaridad.
+                                </p>
+
+                                <p>
+                                    Estas iniciativas fortalecen el sentido de comunidad y recuerdan que pequeños
+                                    gestos, como caminar juntos por una causa, pueden convertirse en un mensaje de
+                                    esperanza para quienes enfrentan esta enfermedad y sus familias.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="blog-eventos" class="blog-section py-5">
+
+        <div class="container">
+
+            <div class="row mb-4">
+
+                <div class="col-12">
+
+                    <h2 class="blog-categoria">
+                        Eventos
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/madre.webp" class="img-fluid blog-img"
+                            alt="Afiche de Arte Brunch con Mamá con piezas de madera decoradas con motivos de naturaleza y alimentos al fondo.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Arte Brunch con Mamá
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una mañana especial para celebrar el Día de la Madre a través del arte, la
+                                creatividad y el compartir en familia.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalBrunch">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalBrunch" tabindex="-1" aria-labelledby="modalBrunchLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalBrunchLabel">
+                                    Arte Brunch con Mamá
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Mayo 2026
+                                </p>
+
+                                <p>
+                                    El Centro Cultural Victoria celebró el Día de la Madre con una actividad que
+                                    combinó arte, gastronomía y convivencia en un ambiente cálido y familiar. Los
+                                    participantes disfrutaron de una experiencia creativa donde pudieron compartir
+                                    tiempo de calidad mientras desarrollaban una actividad artística.
+                                </p>
+
+                                <p>
+                                    Más que un taller, este encuentro buscó fortalecer los vínculos familiares y
+                                    recordar la importancia de crear espacios donde el arte sirva como medio para
+                                    expresar emociones, compartir experiencias y construir recuerdos significativos.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/nocturna.webp" class="img-fluid blog-img"
+                            alt="Afiche de una caminata nocturna en los Bosques del Irazú con información sobre la actividad y una fotografía del paisaje nocturno.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Caminata Nocturna
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una experiencia para reconectar con la naturaleza, fortalecer la convivencia y
+                                disfrutar de una noche diferente en comunidad.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalCaminataNocturna">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalCaminataNocturna" tabindex="-1"
+                    aria-labelledby="modalCaminataNocturnaLabel" aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalCaminataNocturnaLabel">
+                                    Caminata Nocturna
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Junio 2026
+                                </p>
+
+                                <p>
+                                    Como parte de las actividades de integración, el Centro Cultural Victoria
+                                    organizó una caminata nocturna que permitió a los participantes disfrutar de la
+                                    naturaleza en un ambiente de compañerismo, respeto y contemplación. La
+                                    experiencia invitó a desconectarse del ritmo cotidiano para apreciar el entorno
+                                    desde una perspectiva diferente.
+                                </p>
+
+                                <p>
+                                    Además de fomentar hábitos saludables, estas actividades fortalecen los lazos
+                                    entre los miembros de la comunidad y promueven valores como la cooperación, el
+                                    cuidado del medio ambiente y el disfrute consciente de los espacios naturales.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/solsticio.webp" class="img-fluid blog-img"
+                            alt="Imagen de dos personas sentadas frente al atardecer con el mensaje «Solsticio de verano. Cuando el Sol asciende, el Alma también».">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                Celebración del Solsticio de Verano
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Un encuentro para reflexionar sobre los ciclos de la naturaleza y compartir un
+                                espacio de fraternidad y agradecimiento.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalSolsticio">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalSolsticio" tabindex="-1" aria-labelledby="modalSolsticioLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalSolsticioLabel">
+                                    Celebración del Solsticio de Verano
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Junio 2026
+                                </p>
+
+                                <p>
+                                    El solsticio de verano representa un momento de renovación y reflexión
+                                    presente en diversas tradiciones alrededor del mundo. En esta actividad,
+                                    miembros del Centro Cultural Victoria compartieron un espacio de convivencia
+                                    para celebrar el inicio de un nuevo ciclo, resaltando valores como la
+                                    fraternidad, la gratitud y el crecimiento interior.
+                                </p>
+
+                                <p>
+                                    Como parte del encuentro, cada participante llevó frutas maduras para compartir
+                                    en comunidad, simbolizando la abundancia, el esfuerzo colectivo y la importancia
+                                    de valorar los frutos del trabajo realizado durante el año. Fue una jornada de
+                                    aprendizaje, diálogo y unión que fortaleció los lazos entre los asistentes.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <article class="blog-card">
+
+                        <img src="assets/imagenes/blog/festival.webp" class="img-fluid blog-img"
+                            alt="Presentación de danza en el XI Festival de Teatro Artemisa, con una bailarina en primer plano y otra participante sobre el escenario.">
+
+                        <div class="blog-card-body">
+
+                            <h3 class="blog-card-titulo">
+                                XI Festival de Teatro Artemisa
+                            </h3>
+
+                            <p class="blog-card-texto">
+                                Una celebración del arte escénico donde niñas, niños y jóvenes compartieron su
+                                talento en un ambiente de creatividad y aprendizaje.
+                            </p>
+
+                            <a href="#" class="blog-link" tabindex="0" data-bs-toggle="modal"
+                                data-bs-target="#modalTeatro">
+
+                                Leer más
+                                <i class="bi bi-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="modal fade" id="modalTeatro" tabindex="-1" aria-labelledby="modalTeatroLabel"
+                    aria-hidden="true">
+
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+
+                                <h5 class="modal-title" id="modalTeatroLabel">
+                                    XI Festival de Teatro Artemisa
+                                </h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                                </button>
+
+                            </div>
+
+                            <div class="modal-body">
+
+                                <p class="text-muted">
+                                    <strong>Publicado:</strong> Abril 2026
+                                </p>
+
+                                <p>
+                                    El XI Festival de Teatro Artemisa reunió a niños, jóvenes y familias en una
+                                    jornada dedicada a las artes escénicas, donde el teatro se convirtió en un
+                                    espacio para fortalecer la creatividad, la expresión y el trabajo en equipo.
+                                </p>
+
+                                <p>
+                                    Las presentaciones fueron el resultado del compromiso y la dedicación de los
+                                    participantes, quienes compartieron con el público historias llenas de
+                                    imaginación y valores. Este tipo de actividades promueve el desarrollo artístico
+                                    y reafirma la importancia de la cultura como un medio para educar, inspirar y
+                                    construir comunidad.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="blog-faq" class="blog-faq">
+
+        <div class="container">
+
+            <div class="row justify-content-start my-5">
+                <div class=" text-start">
+
+                    <h2 class="blog-categoria blog-section-title blog-faq-titulo mb-3">
+                        Preguntas Frecuentes
+                    </h2>
+
+                    <p class="blog-parrafo">
+                        Respondemos algunas de las consultas más comunes sobre nuestros cursos, actividades y
+                        comunidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="row justify-content-start">
+
+                <div class="col-lg-9">
+
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- Pregunta 1 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqOne" tabindex="0" aria-expanded="true" aria-controls="faqOne">
+
+                                    ¿Necesito conocimientos previos para participar?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body">
+
+                                    No. La mayoría de nuestros cursos, talleres y actividades están diseñados para
+                                    que
+                                    cualquier persona pueda integrarse, independientemente de su experiencia previa.
+                                    Lo
+                                    más importante es el interés por aprender y participar.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Pregunta 2 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqTwo" tabindex="0" aria-expanded="false" aria-controls="faqTwo">
+
+                                    ¿Las actividades tienen algún costo?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body">
+
+                                    Algunos cursos, talleres o eventos requieren una cuota de participación para
+                                    cubrir
+                                    materiales o gastos de organización. Toda la información se comunica previamente
+                                    en
+                                    cada actividad.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Pregunta 3 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqThree" tabindex="0" aria-expanded="false"
+                                    aria-controls="faqThree">
+
+                                    ¿Cómo puedo matricularme?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body">
+
+                                    Podés escribirnos directamente por WhatsApp o completar el formulario de
+                                    contacto
+                                    disponible en nuestro sitio web. Con gusto te orientaremos sobre los cursos,
+                                    horarios y el proceso de inscripción.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Pregunta 4 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqFour" tabindex="0" aria-expanded="false"
+                                    aria-controls="faqFour">
+
+                                    ¿Puedo participar en las actividades de voluntariado?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body">
+
+                                    Sí. Las actividades de voluntariado están abiertas a todas las personas que
+                                    deseen
+                                    contribuir de manera positiva con la comunidad y compartir nuestros valores de
+                                    servicio y compromiso.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Pregunta 5 -->
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faqFive" tabindex="0" aria-expanded="false"
+                                    aria-controls="faqFive">
+
+                                    ¿Cómo puedo mantenerme informado sobre las próximas actividades?
+
+                                </button>
+
+                            </h2>
+
+                            <div id="faqFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+
+                                <div class="accordion-body">
+
+                                    Te invitamos a seguirnos en nuestras redes sociales y suscribirte a nuestro
+                                    boletín
+                                    para conocer los próximos cursos, talleres, eventos y actividades del Centro
+                                    Cultural Victoria.
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="blog-instagram" class="blog-instagram pb-5">
+
+        <div class="container">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-4">
+
+                    <h2 class="blog-instagram-titulo blog-section-title">
+                        Seguinos en Instagram
+                    </h2>
+
+                    <p class="blog-instagram-texto">
+                        Descubrí talleres, eventos, voluntariado y momentos que forman parte de nuestra comunidad.
+                    </p>
+
+                    <div class="blog-instagram-tag mb-2">
+                        @victoriacultural
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-lg-8">
+
+                    <div class="row g-4 mt-3">
+
+                        <!-- Reel 1 -->
+
+                        <div class="col-6 col-md-3">
+
+                            <a href="https://www.instagram.com/p/DZaXaTWRslw/ " target="_blank" tabindex="0">
+
+                                <img src="assets/imagenes/blog/gal-img2.webp" class="img-fluid blog-reel"
+                                    alt="Reel de Instagram Cofraternidad del Centro Cultural Victoria.">
+
+                            </a>
+
+                        </div>
+
+                        <!-- Reel 2 -->
+
+                        <div class="col-6 col-md-3">
+
+                            <a href="LINK_REEL_2" target="_blank" tabindex="0">
+
+                                <img src="assets/imagenes/gal-img6.webp" class="img-fluid blog-reel"
+                                    alt="Reel de Instagram del Centro Cultural Victoria sobre presentación de danza.">
+
+                            </a>
+
+                        </div>
+
+                        <!-- Reel 3 -->
+
+                        <div class="col-6 col-md-3">
+
+                            <a href="https://www.instagram.com/p/DXU6eyPkS7K/?img_index=1" target="_blank" tabindex="0">
+
+                                <img src="assets/imagenes/gal-img8.webp" class="img-fluid blog-reel"
+                                    alt="Reel de Instagram Voluntariado Reto por la Tierra del Centro Cultural Victoria">
+
+                            </a>
+
+                        </div>
+
+                        <!-- Reel 4 -->
+
+                        <div class="col-6 col-md-3">
+
+                            <a href="https://www.instagram.com/p/DVo4kuQkRpI/" target="_blank" tabindex="0">
+
+                                <img src="assets/imagenes/blog/filosofas.webp" class="img-fluid blog-reel"
+                                    alt="Reel de Instagram Filosofas en la historia del Centro Cultural Victoria">
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-info">
+
+                    <img src="assets/imagenes/logo.png" alt="Logotipo del Centro Cultural Victoria de Nueva Acrópolis"
+                        height="60" class="mb-3">
+
+                    <p class="footer-copy mb-0">
+                        © 2026 Centro Cultural Victoria de Nueva Acrópolis
+                    </p>
+
+                </div>
+
+                <div class="footer-redes">
+                    <a href="https://www.facebook.com/victoriacultural.cr/" target="_blank" aria-label="Facebook"
+                        tabindex="0"> <i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/victoriacultural/" target="_blank" aria-label="Instagram"
+                        tabindex="0"> <i class="bi bi-instagram"></i></a>
+                    <a href="https://wa.me/50612345678" aria-label="WhatsApp" tabindex="0"><i
+                            class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+
+    <a href="#blog-hero" class="scroll-top" tabindex="0" aria-label="Volver arriba">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- QR WHATSAPP -->
+    <div class="qr-whatsapp-flotante" id="qrWhatsappFlotante">
+
+        <div class="qr-whatsapp-card shadow">
+
+            <div class="qr-whatsapp-header">
+                <span>Catálogo WhatsApp</span>
+
+                <button type="button" class="btn-close" aria-label="Cerrar" tabindex="0"
+                    onclick="document.getElementById('qrWhatsappFlotante').classList.add('d-none');">
+                </button>
+            </div>
+
+            <a href="https://www.whatsapp.com/catalog/50683739389/?app_absent=0" target="_blank"
+                rel="noopener noreferrer" aria-label="Abrir catálogo de WhatsApp" tabindex="0">
+
+                <img src="assets/imagenes/wa-cat.png"
+                    alt="Código QR para abrir el catálogo de WhatsApp del Centro Cultural Victoria"
+                    class="img-fluid qr-whatsapp-img">
+
+            </a>
+
+            <p class="qr-whatsapp-text mb-0">
+                Escaneá para ver nuestro catálogo
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPTS-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+</body>
+
+</html>

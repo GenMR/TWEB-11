@@ -1,0 +1,59 @@
+/* CONTACTO */
+
+.contacto-section {
+    background: $light;
+    padding-top: 5rem;
+}
+
+.contact-card{
+    padding: 0;
+}
+
+.contact-card p{
+    color: rgba($dark, 0.7);
+}
+
+.contacto-form {
+
+    .form-label {
+        font-size: $fs-md;
+    }
+
+    .form-control {
+        border: 1px solid rgba($dark, 0.1);
+        border-radius: 0.5rem;
+        padding: 0.3rem 1rem;
+        font-size: $fs-base;
+
+        &:focus {
+            border-color: $primary !important;
+            box-shadow: 0 0 0 0.2rem rgba($primary, 0.2) !important;
+            outline: none !important;
+        }
+
+        &::placeholder {
+            color: rgba($dark, 0.2);
+        }
+    }
+}
+
+.ratio {
+    overflow: hidden;
+    border-radius: $radius;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        color: $primary;
+        font-size: 2rem;
+        transition: .25s ease;
+
+        &:hover {
+            color: $secondary;
+            transform: translateY(-2px);
+        }
+    }
+}
